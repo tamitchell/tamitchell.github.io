@@ -1,0 +1,16 @@
+.about-container {
+    background: linear-gradient( #fcd337, transparent);
+    height: 50vh;
+}
+
+h1 {
+    padding-top: 2em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+p{
+    padding: 1em;
+    font-weight: 100;
+}

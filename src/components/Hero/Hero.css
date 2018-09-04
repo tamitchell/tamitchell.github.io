@@ -1,0 +1,33 @@
+.hero-container {
+  background-image: url('https://media.giphy.com/media/l29ZBv7gSuVDr6CSZv/giphy.gif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.text-container {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+h1{
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h5 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
