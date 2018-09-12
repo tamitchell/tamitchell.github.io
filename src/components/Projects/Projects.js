@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import story from '../../storyteller.png'
 
 const Projects = () => (
   <div>
@@ -78,9 +79,9 @@ const Projects = () => (
           Express.js, Handlebars, Node.js, Passport (for user authentication)
           <br />
           <br />
-          <strong>Deployed Application:</strong> https://growthsphere.herokuapp.com/
+          <strong>Deployed Application:</strong> http://happytail-dev.surge.sh/
           <br />
-          <strong>Github Repo:</strong> https://github.com/tamitchell/hair-journal
+          <strong>Github Repo:</strong> https://github.com/tamitchell/HappyTailLLC
         </p>
       </div>
     </div>
@@ -88,33 +89,56 @@ const Projects = () => (
       <div className="row project3">
         <div className="project-img">
           <img
-            src="https://media.giphy.com/media/9xcljsereXGXDrdWas/giphy.gif"
-            alt="Growthsphere project"
+            src={story}
+            alt="Storyteller"
           />
         </div>
         <div className="project-content">
           <h4>Project Purpose:</h4>
 
           <p>
-            <strong>Growthsphere</strong> is an online web application initially
-            designed to create a space for African American women to track their
-            Natural hair growth progress. What's more than a web application
-            that logs hair regimens and product outcomes, I am hoping that this
-            application can evolve to become a space where women of color can
-            come to share, collaborate, and talk about their hair!
+            <strong>Storyteller: A Web Appication for Short Stories</strong> is a modern organizational web app that helps to organize and write novels, poetry, and prose.
+            While this project originally incorporated MERN (MongoDB, Express, React, and Node), I am currently refactoring it to also incorporate GraphQL. Therefore, it has been taken down from production.
           </p>
 
           <p>
           <strong>Technologies Used</strong>
             <br />
-            NoSQL - MongoDB, Mongoose as ODM (Object Document Mapping),
-            Express.js, Handlebars, Node.js, Passport (for user authentication)
+            React.js, Express.js, Node.js, MVC, MongoDB/Mongoose, GraphQl
           </p>
 
           <p>
-            <strong>Deployed Application:</strong> https://growthsphere.herokuapp.com/
+            <strong>Github Repo:</strong> https://github.com/tamitchell/love-letter
+          </p>
+        </div>
+      </div>
+
+       <div className="row project4">
+        <div className="project-img">
+          <img
+            src="https://media.giphy.com/media/9xcljsereXGXDrdWas/giphy.gif"
+            alt="Goku vs Ryu"
+          />
+        </div>
+        <div className="project-content">
+          <h4>Project Purpose:</h4>
+
+          <p>
+            <strong>This game</strong> interactive, role-playing game for learning and development 
+
+
+          </p>
+
+          <p>
+          <strong>Technologies Used</strong>
             <br />
-            <strong>Github Repo:</strong> https://github.com/tamitchell/hair-journal
+            HTML, Sass/CSS, Vanilla Javascript (ES6)
+          </p>
+
+          <p>
+            <strong>Deployed Application:</strong> https://tamitchell.github.io/simple-game/
+            <br />
+            <strong>Github Repo:</strong> https://github.com/tamitchell/simple-game
           </p>
         </div>
       </div>
