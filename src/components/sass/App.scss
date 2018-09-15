@@ -1,0 +1,16 @@
+body {
+  height: 100%;
+  background-color: #fcd337;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+
+@import './mixins.scss';
+
+@import './About.scss';
+@import './Hero.scss';
+@import './Navigation.scss';
+@import './Projects.scss';
