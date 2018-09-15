@@ -1,5 +1,4 @@
 import React from "react";
-import "./Projects.css";
 import story from '../../storyteller.png'
 
 const Projects = () => (
@@ -9,6 +8,7 @@ const Projects = () => (
       <div className="project-img" l={6} s={12} m={6}>
         <img
           src="https://media.giphy.com/media/2yyK43mkxnMSasviry/giphy.gif"
+          href="https://growthsphere.herokuapp.com/"
           alt="Growthsphere project"
         />
       </div>
@@ -39,12 +39,6 @@ const Projects = () => (
       </div>
     </div>
     <div className="row project2">
-      <div className="project-img">
-        <img
-          src="https://media.giphy.com/media/XoUUsG3Vgu3KgtYqRN/giphy.gif"
-          alt="Happy Tails Project"
-        />
-      </div>
       <div className="project-content">
         <h4>What Is It?</h4>
 
@@ -84,6 +78,13 @@ const Projects = () => (
           <strong>Github Repo:</strong> https://github.com/tamitchell/HappyTailLLC
         </p>
       </div>
+      <div className="project-img">
+        <img
+          src="https://media.giphy.com/media/XoUUsG3Vgu3KgtYqRN/giphy.gif"
+          href="https://happytail-dev.surge.sh/"
+          alt="Happy Tails Project"
+        />
+      </div>
     </div>
     <div>
       <div className="row project3">
@@ -114,12 +115,6 @@ const Projects = () => (
       </div>
 
        <div className="row project4">
-        <div className="project-img">
-          <img
-            src="https://media.giphy.com/media/9xcljsereXGXDrdWas/giphy.gif"
-            alt="Goku vs Ryu"
-          />
-        </div>
         <div className="project-content">
           <h4>Project Purpose:</h4>
 
@@ -141,7 +136,48 @@ const Projects = () => (
             <strong>Github Repo:</strong> https://github.com/tamitchell/simple-game
           </p>
         </div>
+        <div className="project-img">
+          <img
+            src="https://media.giphy.com/media/9xcljsereXGXDrdWas/giphy.gif"
+            href="https://tamitchell.github.io/simple-game"
+            alt="Goku vs Ryu"
+          />
+        </div>
       </div>
+      <div className="row project5">
+      <div className="project-img" l={6} s={12} m={6}>
+        <img
+          src="https://media.giphy.com/media/9M6RmfvTSk98V4IhqH/giphy.gif"
+          href="https://firstcall-weather.surge.sh/"
+          alt="First Call Weather App project"
+        />
+      </div>
+      <div className="project-content">
+        <h4>Project Purpose:</h4>
+
+        <p>
+          <strong>Growthsphere</strong> is an online web application initially
+          designed to create a space for African American women to track their
+          Natural hair growth progress. What's more than a web application that
+          logs hair regimens and product outcomes, I am hoping that this
+          application can evolve to become a space where women of color can come
+          to share, collaborate, and talk about their hair!
+        </p>
+
+        <p>
+        <strong>Technologies Used</strong>
+          <br />
+          NoSQL - MongoDB, Mongoose as ODM (Object Document Mapping),
+          Express.js, Handlebars, Node.js, Passport (for user authentication)
+        </p>
+
+        <p>
+          <strong>Deployed Application:</strong> https://growthsphere.herokuapp.com/
+          <br />
+          <strong>Github Repo:</strong> https://github.com/tamitchell/hair-journal
+        </p>
+      </div>
+    </div>
     </div>
   </div>
 );

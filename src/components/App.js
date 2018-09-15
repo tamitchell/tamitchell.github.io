@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import { Route, Switch} from 'react-router-dom'
-import './App.css';
-import Hero from '../Hero/Hero'
-import Resume from '../Resume/Resume'
-import About from '../About/About'
-import Contact from '../Contact/Contact'
-import Projects from '../Projects/Projects'
-import Nav from '../Navigation/Navigation'
-import Footer from '../Footer/Footer'
+import '../components/sass/App.scss';
+import Hero from './Hero'
+import Resume from './Resume'
+import About from './About'
+import Contact from './Contact'
+import Projects from './Projects'
+import Nav from './Navigation'
+import Footer from './Footer'
 
 export default class App extends Component {
   render() {
