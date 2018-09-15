@@ -8,6 +8,7 @@ import Contact from './Contact'
 import Projects from './Projects'
 import Nav from './Navigation'
 import Footer from './Footer'
+import Skills from './Skills'
 
 export default class App extends Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends Component {
           <Nav />
           <Hero />
           <About />
+          <Skills />
           <Projects />
           <Contact />
           <Footer />
