@@ -1,33 +1,63 @@
 @import "./mixins.scss";
 
-.project-button {
-  width: 300px;
-  min-height: 300px;
-  @include background-setup();
-  background-image: url("https://i.pinimg.com/564x/63/1e/fe/631efec1e36db0430354926bccd66be7.jpg");
-  p {
-    text-align: center;
-    font-size: 28px;
-    letter-spacing: 2px;
-  }
-}
-
-.card {
-  margin: 0;
-  padding: 0;
-  box-shadow: none;
-  border: none;
-  border-radius: none;
-  width: 100%;
-  .project-img {
-    width: 100%;
+.project-container {
+  @include flexbox();
+    border: 1px solid red;
     height: 100%;
-    position: relative;
-    img {
-      width: 100%;
-      height: 100%;
+    width:100%;
+    padding: 2em;
+  .project-button {
+    margin: 0.5em;
+    max-width:40vw;
+    min-width: 300px;
+    min-height: 40vh;
+    max-height: 40vh;
+    @include background-setup();
+    p {
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    &:hover {
+      transform: scale(1.3);
     }
   }
+  
+  .project1 {
+    background-image: url('https://i.pinimg.com/564x/63/1e/fe/631efec1e36db0430354926bccd66be7.jpg');
+  }
+  .project2 {
+    background-image: url('https://images.pexels.com/photos/171297/pexels-photo-171297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  }
+  .project3 {
+    background-image: url('https://i.pinimg.com/564x/93/13/c3/9313c3527bd666e3b06042a966e78f0f.jpg');
+  }
+  .project4 {
+    background-image: url('https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  }
+  .project5 {
+    background-image: url('https://i.pinimg.com/564x/d3/6f/3e/d36f3e6c89053eb842defc374b2831d3.jpg');
+  }
+  
+  .card {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    border-radius: none;
+    width: 100%;
+    .project-img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
+
 }
 
 @media screen and (min-width: 768px) {

@@ -1,15 +1,16 @@
 import React from "react";
-import { Modal, Button, Icon } from "react-materialize";
+import { Modal, Button } from "react-materialize";
 import story from "../storyteller.png";
 
 const Projects = () => (
-  <div className="container">
+  <div>
     <h1>Projects</h1>
+    <div className="project-container">
     <Modal
       header="Growthsphere"
       fixedFooter
       trigger={
-        <Button className="project-button" waves="light">
+        <Button className="project-button project1" waves="light">
           <p>Growthsphere</p>
         </Button>
       }
@@ -58,8 +59,10 @@ const Projects = () => (
     <Modal
       header="Happy Tail VA LLC"
       trigger={
-        <Button waves="light">
-          Happy Tail VA LLC
+        <Button 
+        className="project-button project2"
+        waves="light">
+          <p>Happy Tail VA LLC</p>
         </Button>
       }
     >
@@ -117,8 +120,10 @@ const Projects = () => (
     <Modal
       header="Storyteller: A Web Appication for Short Stories"
       trigger={
-        <Button waves="light">
-          Storyteller
+        <Button 
+        className="project-button project3"
+        waves="light">
+          <p>Storyteller</p>
         </Button>
       }
     >
@@ -156,8 +161,10 @@ const Projects = () => (
     <Modal
       header="First Call Weather App"
       trigger={
-        <Button waves="light">
-          First Call Weather
+        <Button 
+        className="project-button project4"
+        waves="light">
+          <p>First Call Weather</p>
         </Button>
       }
     >
@@ -201,8 +208,10 @@ const Projects = () => (
     <Modal
       header="Online Web Application Game"
       trigger={
-        <Button waves="light">
-          Browser Web Game
+        <Button 
+        className="project-button project5"
+        waves="light">
+          <p>Browser Web Game</p>
         </Button>
       }
     >
@@ -241,6 +250,7 @@ const Projects = () => (
         </div>
       </div>
     </Modal>
+    </div>
   </div>
 );
 
