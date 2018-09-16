@@ -40,7 +40,6 @@ const Projects = () => (
           <p>
             <strong>Technologies Used:</strong>
             <br />
-            <br />
             NoSQL - MongoDB, Mongoose as ODM (Object Document Mapping),
             Express.js, Handlebars, Node.js, Passport (for user authentication)
           </p>
