@@ -14,3 +14,9 @@
     -ms-flex-align: center;
     align-items: center;
 }
+
+@mixin background-setup {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

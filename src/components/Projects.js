@@ -1,10 +1,19 @@
 import React from "react";
+import { Modal, Button, Icon } from "react-materialize";
 import story from "../storyteller.png";
 
 const Projects = () => (
-  <div>
+  <div className="container">
     <h1>Projects</h1>
-    {/* <div className="row project-container project1">
+    <Modal
+      header="Growthsphere"
+      fixedFooter
+      trigger={
+        <Button className="project-button" waves="light">
+          <p>Growthsphere</p>
+        </Button>
+      }
+    >
       <div class="card">
         <div class="card-image project-img">
           <img
@@ -44,10 +53,24 @@ const Projects = () => (
           </div>
         </div>
       </div>
-    </div>
+    </Modal>
 
-    <div className="row project-container project1">
-      <div class="card horizontal">
+    <Modal
+      header="Happy Tail VA LLC"
+      trigger={
+        <Button waves="light">
+          Happy Tail VA LLC
+        </Button>
+      }
+    >
+      <div class="card">
+        <div class="card-image project-img">
+          <img
+            src="https://media.giphy.com/media/XoUUsG3Vgu3KgtYqRN/giphy.gif"
+            href="http://happytail-dev.surge.sh/"
+            alt="Happy Tail VA LLC"
+          />
+        </div>
         <div class="card-stacked">
           <div class="card-content">
             <strong>Happy Tails VA LLC</strong> is an upcoming dog walking
@@ -74,14 +97,12 @@ const Projects = () => (
                 </li>
               </ul>
             </p>
-
-               <p>
-            <strong>Technologies Used</strong>
-            <br />
-            Javascript(ES5), HTML + SASS, Bootstrap, Surge (for deployment)
-          </p>
-
-              <div class="card-action">
+            <p>
+              <strong>Technologies Used</strong>
+              <br />
+              Javascript(ES5), HTML + SASS, Bootstrap, Surge (for deployment)
+            </p>
+            <div class="card-action">
               <a href="http://happytail-dev.surge.sh/">Deployed Application</a>
               <br />
               <a href="https://github.com/tamitchell/HappyTailLLC">
@@ -90,19 +111,19 @@ const Projects = () => (
             </div>
           </div>
         </div>
-        <div class="card-image project-img hide-on-small-only">
-          <img
-            src="https://media.giphy.com/media/XoUUsG3Vgu3KgtYqRN/giphy.gif"
-            href="http://happytail-dev.surge.sh/"
-            alt="Happy Tail VA LLC"
-          />
-        </div>
       </div>
-    </div>
+    </Modal>
 
-    <div className="row project-container project1">
-      <div class="card horizontal">
-        <div class="card-image project-img hide-on-small-only">
+    <Modal
+      header="Storyteller: A Web Appication for Short Stories"
+      trigger={
+        <Button waves="light">
+          Storyteller
+        </Button>
+      }
+    >
+      <div class="card">
+        <div class="card-image project-img">
           <img src={story} alt="Storyteller" />
         </div>
         <div class="card-stacked project-content">
@@ -130,10 +151,24 @@ const Projects = () => (
           </div>
         </div>
       </div>
-    </div>
+    </Modal>
 
-    <div className="row project-container project1">
-      <div class="card horizontal">
+    <Modal
+      header="First Call Weather App"
+      trigger={
+        <Button waves="light">
+          First Call Weather
+        </Button>
+      }
+    >
+      <div class="card">
+        <div class="card-image project-img">
+          <img
+            src="https://media.giphy.com/media/9M6RmfvTSk98V4IhqH/giphy.gif"
+            href="https://firstcall-weather.surge.sh/"
+            alt="First Call Weather App project"
+          />
+        </div>
         <div class="card-stacked">
           <div class="card-content">
             <p>
@@ -146,7 +181,8 @@ const Projects = () => (
             <p>
               <strong>Technologies Used</strong>
               <br />
-              Javascript(ES6), React, JSX, Babel, HTML + SASS, DarkSky API, GeoCodio API, Surge (for deployment)
+              Javascript(ES6), React, JSX, Babel, HTML + SASS, DarkSky API,
+              GeoCodio API, Surge (for deployment)
             </p>
             <div class="card-action">
               <a href="https://growthsphere.herokuapp.com/">
@@ -159,19 +195,19 @@ const Projects = () => (
             </div>
           </div>
         </div>
-        <div class="card-image project-img hide-on-small-only">
-          <img
-            src="https://media.giphy.com/media/9M6RmfvTSk98V4IhqH/giphy.gif"
-            href="https://firstcall-weather.surge.sh/"
-            alt="First Call Weather App project"
-          />
-        </div>
       </div>
-    </div>
+    </Modal>
 
-    <div className="row project-container project1">
-      <div class="card horizontal">
-        <div class="card-image project-img hide-on-small-only">
+    <Modal
+      header="Online Web Application Game"
+      trigger={
+        <Button waves="light">
+          Browser Web Game
+        </Button>
+      }
+    >
+      <div class="card">
+        <div class="card-image project-img">
           <img
             src="https://media.giphy.com/media/9xcljsereXGXDrdWas/giphy.gif"
             href="https://tamitchell.github.io/simple-game"
@@ -188,7 +224,8 @@ const Projects = () => (
             <p>
               <strong>Technologies Used</strong>
               <br />
-              HTML, Sass/CSS, Vanilla Javascript (ES6), GH pages (for deployment)
+              HTML, Sass/CSS, Vanilla Javascript (ES6), GH pages (for
+              deployment)
             </p>
 
             <div class="card-action">
@@ -203,7 +240,7 @@ const Projects = () => (
           </div>
         </div>
       </div>
-    </div> */}
+    </Modal>
   </div>
 );
 
