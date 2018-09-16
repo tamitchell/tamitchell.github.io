@@ -2,7 +2,6 @@
 
 .project-container {
   @include flexbox();
-    border: 1px solid red;
     height: 100%;
     width:100%;
     padding: 2em;
@@ -17,9 +16,15 @@
       text-align: center;
       font-size: 28px;
       letter-spacing: 2px;
+      font-weight: 100;
     }
     &:hover {
       transform: scale(1.3);
+    }
+  }
+  .card-component {
+    p {
+      color: black;
     }
   }
   
@@ -38,25 +43,6 @@
   .project5 {
     background-image: url('https://i.pinimg.com/564x/d3/6f/3e/d36f3e6c89053eb842defc374b2831d3.jpg');
   }
-  
-  .card {
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-    border: none;
-    border-radius: none;
-    width: 100%;
-    .project-img {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-  
 
 }
 

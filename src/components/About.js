@@ -1,7 +1,8 @@
 import React from "react";
+import {Row} from 'react-materialize'
 
 const About = () => (
-  <div className="about-container">
+  <Row className="container about-container">
     <h1>Who Am I?</h1>
     <p>
       I am a Web Developer with a passion for bringing words from mere paper and
@@ -17,7 +18,7 @@ const About = () => (
       human narratives that reach vast variety of people, cultures, and
       organizations.
     </p>
-  </div>
+  </Row>
 );
 
 export default About;
