@@ -4,8 +4,6 @@ import Hero from './Hero'
 import About from './About'
 import Contact from './Contact'
 import Projects from './Projects'
-// import Nav from './Navigation'
-// import Footer from './Footer'
 import Skills from './Skills'
 
 export default class App extends Component {
@@ -13,7 +11,6 @@ export default class App extends Component {
     return (
         <div>
         <Fragment>
-          {/* <Nav /> */}
           <Hero />
           <About />
           <Skills />
