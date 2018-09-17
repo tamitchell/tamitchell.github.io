@@ -16,7 +16,7 @@ export default class App extends Component {
           <Skills />
           <Projects />
           <Contact />
-      </Fragment>
+        </Fragment>
         </div>
     );
   }
