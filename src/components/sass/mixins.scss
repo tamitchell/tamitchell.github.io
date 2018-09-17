@@ -20,3 +20,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@mixin wrapper {
+    position: relative;
+    width:100%;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}

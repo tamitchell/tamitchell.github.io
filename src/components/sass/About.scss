@@ -1,12 +1,11 @@
+@import './mixins.scss';
+
 .about-container {
     width:100vw;
     height:100vh;
     .wrapper {
-        text-align: center;
-        position: relative;
-        width:100%;
-        top: 50%;
-        transform: perspective(1px) translateY(-50%);
+       @include wrapper();
+       text-align: center;
     img {
         position: absolute;
         top: 0%;
