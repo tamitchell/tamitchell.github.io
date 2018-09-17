@@ -1,8 +1,18 @@
 import React from "react";
-import {Row} from 'react-materialize'
+import {Row, Col} from 'react-materialize'
+import rainbow from '../img/rainbow.png';
 
 const About = () => (
-  <Row className="container about-container">
+  <Row className="about-container">
+    <Col 
+    className="wrapper"
+    s={12} 
+    m={12} 
+    l={12}>
+    <img 
+    src={rainbow}
+    title="Rainbow with Clouds"
+    alt="Rainbow with Clouds"/>
     <h1>Who Am I?</h1>
     <p>
       I am a Web Developer with a passion for bringing words from mere paper and
@@ -21,6 +31,7 @@ const About = () => (
       human narratives that reach vast variety of people, cultures, and
       organizations.
     </p>
+    </Col>
   </Row>
 );
 

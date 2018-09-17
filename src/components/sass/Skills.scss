@@ -1,7 +1,9 @@
 @import './mixins.scss';
 
 .skills-container {
-
+    width: 100vw;
+    height:100vh;
+    .wrapper {
         .chip {
             background-color: #942F7B;
             color: white;
@@ -11,4 +13,5 @@
                 cursor: pointer;
             }
         }
+    }
 }
