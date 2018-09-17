@@ -9,9 +9,10 @@ const Skills = () => (
         <h5>Front End</h5>
       </Col>
       <Col s={12} m={12} l={12}>
-        <Chip className="chip">HTML</Chip>
+        <Chip>HTML</Chip>
         <Chip>CSS3</Chip>
         <Chip>Sass/Compass</Chip>
+        <Chip>React.js</Chip>
         <Chip>Javascript (ES6)</Chip>
         <Chip>jQuery</Chip>
         <Chip>Bootstrap</Chip>
