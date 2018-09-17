@@ -10,7 +10,10 @@ const About = () => (
       interactive. When I transitioned from learning human languages as a
       linguist to computer programming, I was able to quickly transfer my skill
       of breaking down concepts to their bare syntax and grammar and
-      reconstructing them into readable and functional code. I love the process
+      reconstructing them into readable and functional code. 
+      </p>
+      
+      <p>I love the process
       of learning something new, and I love that experience of feeling the drive
       to get better at what I am learning by any means possible. All of these
       qualities not only add up to making me a great programmer, but overall,
