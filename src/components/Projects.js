@@ -16,7 +16,6 @@ const Projects = () => (
         }
       >
         <Card
-          className="card-component"
           header={<CardTitle image="https://media.giphy.com/media/2yyK43mkxnMSasviry/giphy.gif" />}
           actions={[
             <a href="https://growthsphere.herokuapp.com/">
