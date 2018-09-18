@@ -11,11 +11,6 @@
         .chip {
             background-color: #942F7B;
             color: white;
-            &:hover {
-                transition: 0.5s ease-in-out;
-                transform: scalex(1.2);
-                cursor: pointer;
-            }
         }
     }
 }
