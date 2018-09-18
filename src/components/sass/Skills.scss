@@ -2,21 +2,18 @@
 
 .skills-container {
     width: 100vw;
-    height:100vh;
+    @include flexbox();
     .wrapper {
-        @include wrapper();
-        height: 100%;
+        padding: 3em;
+        max-width: 800px;
+        height:auto !important;        /* for IE as it does not support min-height */
         h5 {
          font-weight: 100;   
         }
         .chip {
             background-color: #942F7B;
             color: white;
-            &:hover {
-                transition: 0.5s ease-in-out;
-                transform: scalex(1.2);
-                cursor: pointer;
-            }
+
         }
     }
 }

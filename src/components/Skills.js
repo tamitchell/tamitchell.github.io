@@ -2,7 +2,7 @@ import React from "react";
 import { Chip, Row, Col } from "react-materialize";
 
 const Skills = () => (
-  <Row className="container skills-container">
+  <Row className="skills-container">
     <section className="wrapper">
       <h1>Skills</h1>
       <Row>
