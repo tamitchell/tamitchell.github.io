@@ -5,6 +5,7 @@
     height:100vh;
     .wrapper {
         @include wrapper();
+        height: 100%;
         h5 {
          font-weight: 100;   
         }
