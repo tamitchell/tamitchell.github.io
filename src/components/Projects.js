@@ -153,10 +153,10 @@ const Projects = () => (
               <CardTitle image="https://media.giphy.com/media/9M6RmfvTSk98V4IhqH/giphy.gif" />
             }
             actions={[
-              <a href="https://growthsphere.herokuapp.com/">
+              <a href="https://firstcall-weather.surge.sh/">
                 Deployed Application
               </a>,
-              <a href="https://firstcall-weather.surge.sh/">
+              <a href="https://github.com/tamitchell/weatherapp">
                 Github Repository
               </a>
             ]}
