@@ -11,11 +11,12 @@ const Projects = () => (
 
       <Col s={12} m={4} l={4}>
         <Modal
+          key={1}
           fixedFooter
           header="Growthsphere"
           trigger={
             <Button className="project-button project1">
-              <p>Growthsphere</p>
+              <p>Growth<br />sphere</p>
             </Button>
           }
         >
@@ -55,6 +56,7 @@ const Projects = () => (
         </Modal>
 
         <Modal
+          key={2}
           header="Happy Tail VA LLC"
           trigger={
             <Button className="project-button project2">
@@ -79,24 +81,22 @@ const Projects = () => (
             <p>
               <strong>Position</strong>: Full Stack Web Developer
             </p>
-            <p>
-              <strong>Responsibilities:</strong>
-              <ul>
-                <li>
-                  Organized multiple visits with company owners to outline the
-                  design process.
-                </li>
-                <li>
-                  Made use of Google Analytics and Google Chrome Auditing
-                  service to ensure site has maximum SEO so that customers from
-                  all backgrounds are able to have access to the same service.
-                </li>
-                <li>
-                  Redesigned website with attractive color scheme and flexible
-                  layout optimal for mobile, tablet, and desktop view
-                </li>
-              </ul>
-            </p>
+            <strong>Responsibilities:</strong>
+            <ul>
+              <li>
+                Organized multiple visits with company owners to outline the
+                design process.
+              </li>
+              <li>
+                Made use of Google Analytics and Google Chrome Auditing service
+                to ensure site has maximum SEO so that customers from all
+                backgrounds are able to have access to the same service.
+              </li>
+              <li>
+                Redesigned website with attractive color scheme and flexible
+                layout optimal for mobile, tablet, and desktop view
+              </li>
+            </ul>
             <p>
               <strong>Technologies Used</strong>
               <br />
@@ -118,6 +118,9 @@ const Projects = () => (
           <Card
             header={<CardTitle image={story} />}
             actions={[
+              <a href="https://storyteller-ss.surge.sh/">
+                Deployed Application
+              </a>,
               <a href="https://github.com/tamitchell/storyteller">
                 Github Repository
               </a>
@@ -223,14 +226,12 @@ const Projects = () => (
           }
         >
           <Card
-            header={
-              <CardTitle image="http://www.esc-al.com/Construction_Sector.jpg" />
-            }
+            header={<CardTitle image={require("../img/construction.jpg")} />}
           >
             <p>
               <strong>Danger Zone</strong> is a full-stack web application
               created by three budding developers (Stephanie Choi, Davaid
-              Zafirovic, and Tasha Mitchell(Me!)) that combines our love of
+              Zafirovic, and Tasha Mitchell(Me!) that combines our love of
               animals with our desire to collaborate and learn React. DangerZone
               educates users about endangered species and allows logged-in users
               to add their favorite endangered animal to their own profile page.
@@ -239,16 +240,22 @@ const Projects = () => (
               alive.
             </p>
             <br />
-            <p />
-            For our app: 
+            <br />
+            For our app:
             <ol>
               <li>User can view all animals on the Homepage</li>
-              <li>User can navigate to the News page to see all news articles</li>
-              <li>User can Sign-Up to create an account
-              <li>User can Log-In to access the account</li>
-              <li>Once logged in, User can update their User page by choosing an animal to add to his/her individual User Page</li>
+              <li>
+                User can navigate to the News page to see all news articles
               </li>
-              </ol>
+              <li>
+                User can Sign-Up to create an account
+              </li>
+                <li>User can Log-In to access the account</li>
+                <li>
+                  Once logged in, User can update their User page by choosing an
+                  animal to add to his/her individual User Page
+                </li>
+            </ol>
             <p>
               <strong>Technologies Used</strong>
               <br />
@@ -256,9 +263,23 @@ const Projects = () => (
               JSON
             </p>
             <br />
-            <p>Currently, this site is under construction, and cannot be seen deployed, but visitors can see github repository links for 
-              <a className="repo-link" href="https://github.com/DavidZafa/Project3DTSFrontEnd">Front End</a> and 
-              <a className="repo-link" href="https://github.com/DavidZafa/Project3DTSBackEnd">Back End</a></p>
+            <p>
+              Currently, this site is under construction, and cannot be seen
+              deployed, but visitors can see github repository links for
+              <a
+                className="repo-link"
+                href="https://github.com/DavidZafa/Project3DTSFrontEnd"
+              >
+                Front End
+              </a>{" "}
+              and
+              <a
+                className="repo-link"
+                href="https://github.com/DavidZafa/Project3DTSBackEnd"
+              >
+                Back End
+              </a>
+            </p>
           </Card>
         </Modal>
       </Col>
