@@ -195,7 +195,7 @@ const Projects = () => (
               <CardTitle image="https://media.giphy.com/media/9xcljsereXGXDrdWas/giphy.gif" />
             }
             actions={[
-              <a href="https://tamitchell.github.io/simple-game/">
+              <a href="https://simple-game.surge.sh/">
                 Deployed Application
               </a>,
               <a href="https://github.com/tamitchell/simple-game">
