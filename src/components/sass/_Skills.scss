@@ -5,11 +5,8 @@
     @include flexbox();
     .wrapper {
         padding: 3em;
-        max-width: 800px;
+        max-width: 1200px;
         height:auto !important;        /* for IE as it does not support min-height */
-        h5 {
-         font-weight: 100;   
-        }
         .chip {
             background-color: #942F7B;
             color: white;

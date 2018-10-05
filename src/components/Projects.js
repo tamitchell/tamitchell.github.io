@@ -1,6 +1,5 @@
 import React from "react";
 import { Modal, Button, Row, Card, CardTitle, Col } from "react-materialize";
-import story from "../storyteller.png";
 
 const Projects = () => (
   <Row className="project-component">
@@ -15,7 +14,7 @@ const Projects = () => (
           fixedFooter
           header="Growthsphere"
           trigger={
-            <Button className="project-button project1">
+            <Button className="project1">
               <p>Growth<br />sphere</p>
             </Button>
           }
@@ -59,7 +58,7 @@ const Projects = () => (
           key={2}
           header="Happy Tail VA LLC"
           trigger={
-            <Button className="project-button project2">
+            <Button className="project2">
               <p>Happy Tail VA LLC</p>
             </Button>
           }
@@ -110,13 +109,13 @@ const Projects = () => (
         <Modal
           header="Storyteller: A Web Appication for Short Stories"
           trigger={
-            <Button className="project-button project3">
+            <Button className="project3">
               <p>Storyteller</p>
             </Button>
           }
         >
           <Card
-            header={<CardTitle image={story} />}
+            header={<CardTitle image="https://media.giphy.com/media/1ULBos7obHSsfuUto2/giphy.gif" />}
             actions={[
               <a href="https://storyteller-ss.surge.sh/">
                 Deployed Application
@@ -146,7 +145,7 @@ const Projects = () => (
         <Modal
           header="First Call Weather App"
           trigger={
-            <Button className="project-button project4">
+            <Button className="project4">
               <p>First Call Weather</p>
             </Button>
           }
@@ -185,7 +184,7 @@ const Projects = () => (
         <Modal
           header="Online Web Application Game"
           trigger={
-            <Button className="project-button project5">
+            <Button className="project5">
               <p>Browser Web Game</p>
             </Button>
           }
@@ -271,7 +270,7 @@ const Projects = () => (
                 href="https://github.com/DavidZafa/Project3DTSFrontEnd"
               >
                 Front End
-              </a>{" "}
+              </a>
               and
               <a
                 className="repo-link"

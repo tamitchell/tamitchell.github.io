@@ -13,11 +13,11 @@
     padding: 2em;
     height: 100%;
 
-    .project-button {
+    button {
       margin: 0.5em;
       width: 100%;
       max-width: 40vw;
-      min-width: 200px;
+      min-width: 250px;
       min-height: 30vh;
       max-height: 40vh;
       @include background-setup();
@@ -32,11 +32,6 @@
         transition: 0.5s ease-in-out;
       }
     }
-    .card-component {
-      p {
-        color: black;
-      }
-    }
     .project1 {
       background-image: url("https://i.pinimg.com/564x/63/1e/fe/631efec1e36db0430354926bccd66be7.jpg");
     }
@@ -47,7 +42,7 @@
       background-image: url("https://i.pinimg.com/564x/93/13/c3/9313c3527bd666e3b06042a966e78f0f.jpg");
     }
     .project4 {
-      background-image: url("https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+      background-image: url("https://images.pexels.com/photos/1040473/pexels-photo-1040473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     }
     .project5 {
       background-image: url("https://i.pinimg.com/564x/d3/6f/3e/d36f3e6c89053eb842defc374b2831d3.jpg");
@@ -60,7 +55,4 @@
 
 .repo-link {
   color: goldenrod;
-}
-
-@media screen and (min-width: 768px) {
 }
