@@ -19,7 +19,7 @@ const Employment = () => (
                 </h6>
                 <p>
                 Happy Tail VA LLC is a animal care company that provides services such as dog walking, animal boarding, and vaccination administration.
-                I redesigned their website with an attractive color scheme and flexible layout optimal for mobile, tablet, and desktop view.
+                I was asked to redesign their website with an attractive color scheme and flexible layout optimal for mobile, tablet, and desktop view.
                 </p>
                 <p>Technologies Used: Javascript(ES6), HTML + SASS, Bootstrap, Surge (for deployment)</p>
             </Col>
