@@ -1,7 +1,6 @@
 @import './mixins';
 
 .employment-component {
-    @include flexbox();
     .col {
         img {
             display: block;
