@@ -1,8 +1,10 @@
 @import './mixins.scss';
 
 .skills-container {
-    width: 100vw;
+    // width: 100vw;
     @include flexbox();
+    // max-width: 800px;
+    border: 1px solid red;
     .wrapper {
         padding: 3em;
         max-width: 1200px;

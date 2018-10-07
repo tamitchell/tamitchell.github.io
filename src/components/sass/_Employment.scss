@@ -1,12 +1,7 @@
+@import './mixins';
+
 .employment-component {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    padding: 2em;
-    height: 100%;
-    color: white;
+    @include flexbox();
     .col {
         img {
             display: block;

@@ -3,7 +3,6 @@ import { Modal, Button, Row, Card, CardTitle, Col } from "react-materialize";
 
 const Projects = () => (
   <Row className="project-component">
-    <section className="wrapper">
       <Col s={12} m={12} l={12}>
         <h1>Projects</h1>
       </Col>
@@ -282,7 +281,6 @@ const Projects = () => (
           </Card>
         </Modal>
       </Col>
-    </section>
   </Row>
 );
 

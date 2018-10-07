@@ -36,5 +36,16 @@ body {
   // -webkit-background-clip: text;
   // background-clip: text;
   }
+  .row:not(.hero-container) {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding: 2em;
+    height: 100%;
+    color: white;
+    border: 1px solid blue;
+  }
 }
 
