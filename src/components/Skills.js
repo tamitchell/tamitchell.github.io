@@ -10,11 +10,10 @@ const Skills = () => (
           <h5>Front End</h5>
         </Col>
         <Col s={12} m={12} l={12}>
-          <Chip>HTML</Chip>
-          <Chip>CSS3</Chip>
-          <Chip>Sass/Compass</Chip>
+          <Chip>HTML5 + CSS</Chip>
+          <Chip>Sass</Chip>
           <Chip>React.js</Chip>
-          <Chip>Javascript (ES6)</Chip>
+          <Chip>JavaScript (ES6)</Chip>
           <Chip>jQuery</Chip>
           <Chip>Bootstrap</Chip>
           <Chip>Materialize</Chip>
@@ -32,13 +31,12 @@ const Skills = () => (
           <Chip>Node.js</Chip>
           <Chip>Python/Django</Chip>
           <Chip>Express.js</Chip>
-          <Chip>JSON</Chip>
         </Col>
       </Row>
 
       <Row>
         <Col s={12} m={12}>
-          <h5>Data Bases</h5>
+          <h5>DataBases</h5>
         </Col>
         <Col s={12} m={12}>
           <Chip>Mongoose/MongoDB</Chip>
@@ -59,6 +57,7 @@ const Skills = () => (
           <Chip>Wire-framing/User Stories</Chip>
           <Chip>OOP (Object-Oriented Programming)</Chip>
           <Chip>MVC Methodologies</Chip>
+          <Chip>RESTful API</Chip>
         </Col>
       </Row>
 
@@ -67,11 +66,11 @@ const Skills = () => (
           <h5>Miscellaneous</h5>
         </Col>
         <Col s={12} m={12}>
-          <Chip>AJAX</Chip>
           <Chip>Responsive Web Design</Chip>
           <Chip>Trilingual in Spanish, English, and Chinese</Chip>
-          <Chip>Adobe CS Suite</Chip>
           <Chip>Graphic Design</Chip>
+          <Chip>Adobe Creative Suite: Photoshop, Adobe XD, Illustrator</Chip>
+          <Chip>Project management / bug tracking: JIRA</Chip>
         </Col>
       </Row>
     </section>

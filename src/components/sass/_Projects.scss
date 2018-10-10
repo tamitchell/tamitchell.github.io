@@ -3,6 +3,10 @@
 
   .card-content{
 
+    h6 {
+      font-size: 20px;
+      color: black;
+    }
     img {
       width:100%;
     }
@@ -17,9 +21,6 @@
   h4 {
     text-align: center;
     font-size: 16px;
-  }
-  h6 {
-    color: black;
   }
     button {
       display: block;

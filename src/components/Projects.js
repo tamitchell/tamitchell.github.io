@@ -218,7 +218,10 @@ const Projects = () => (
             second loading time that has confused some user's upon first visit.
             With Handlebars, being that it has been called a 'logicless
             templating language,' it became increasingly more evident that
-            making changes on the frontend would result in more clammy code (at least I think so). While Handlebars makes pretty good use of their partials (a feature that works very similarly to more modern frontend framework's ideas of "components"), it's still pretty ugly.
+            making changes on the frontend would result in more clammy code (at
+            least I think so). While Handlebars makes pretty good use of their
+            partials (a feature that works very similarly to more modern
+            frontend framework's ideas of "components"), it's still pretty ugly.
           </p>
           <h6>Technologies Used:</h6>
           <p>
