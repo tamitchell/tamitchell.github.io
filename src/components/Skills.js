@@ -18,8 +18,6 @@ const Skills = () => (
           <Chip>Bootstrap</Chip>
           <Chip>Materialize</Chip>
           <Chip>Handlebars.js</Chip>
-          <Chip>Babel</Chip>
-          <Chip>Webpack</Chip>
         </Col>
       </Row>
 

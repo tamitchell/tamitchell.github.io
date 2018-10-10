@@ -60,7 +60,7 @@ const Employment = () => (
           flexible layout optimal for mobile, tablet, and desktop view.
         </p>
         <p>
-          Technologies Used: JavaScript(ES6), HTML + SASS, Bootstrap, Surge (for
+          Technologies Used: JavaScript(ES6), HTML5 + CSS, SASS, Bootstrap, Surge (for
           deployment)
         </p>
       </Col>
