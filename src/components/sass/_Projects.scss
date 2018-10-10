@@ -1,14 +1,28 @@
 @import "./mixins.scss";
 
+.modal-header {
+  h1,h2,h3, h4, h5, h6 {
+    color: black;
+  }
+}
+.card {
+  img {
+    max-height: 300px;
+  }
+}
+.card-content{
 
-  .card-content{
-
-    h6 {
-      font-size: 20px;
-      color: black;
-    }
-    img {
+  h6 {
+    font-size: 20px;
+    color: black;
+  }
+  img {
       width:100%;
+    }
+    a {
+      color: goldenrod;
+      text-transform: inherit;
+  
     }
   }
 
