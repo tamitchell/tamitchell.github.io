@@ -1,11 +1,12 @@
 {
   "main.css": "static/css/main.b0b0388c.css",
   "main.css.map": "static/css/main.b0b0388c.css.map",
-  "main.js": "static/js/main.a6d4e7e7.js",
-  "main.js.map": "static/js/main.a6d4e7e7.js.map",
+  "main.js": "static/js/main.5919c4d6.js",
+  "main.js.map": "static/js/main.5919c4d6.js.map",
   "static/media/construction.jpg": "static/media/construction.902d7e7b.jpg",
   "static/media/happytail.png": "static/media/happytail.855bc198.png",
   "static/media/mobile_mockup.png": "static/media/mobile_mockup.c39b28bb.png",
   "static/media/rainbow.png": "static/media/rainbow.f54e57bf.png",
-  "static/media/srt.png": "static/media/srt.05dbf5df.png"
+  "static/media/srt.png": "static/media/srt.05dbf5df.png",
+  "static/media/storyteller_colorscheme.png": "static/media/storyteller_colorscheme.459f5c03.png"
 }
