@@ -9,15 +9,15 @@ const Employment = () => (
         <a href="http://srtlabs.com/">
           <img
             src={require("../img/srt.png")}
-            alt="Science Robotics and Technologies logo"
-            title="Science Robotics and Technologies logo"
+            alt="Service Robotics and Technologies logo"
+            title="Service Robotics and Technologies logo"
           />
         </a>
       </Col>
       <Col s={12} m={8} l={8}>
         <h5>Service Robotics &amp; Technologies</h5>
         <h6>
-          Front End Web Developer
+          Software Developer
           <br />
           October 2018 - Present
         </h6>
@@ -27,8 +27,8 @@ const Employment = () => (
           service industry businesses and commercial facilities. 
           <br />
           <br />
-          My job as a
-          Front End Web Developer focused on improving user experience as well
+          My role as a
+          Software Developer focused on improving user experience as well
           debugging several errors within the ReactJS framework so that project could successful
           move from a 'beta' project to their 'MVP' that they needed to present
           at a conference by the end of the month.

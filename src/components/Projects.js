@@ -228,7 +228,9 @@ const Projects = () => (
               more modern frontend framework's ideas of "components"), it's
               still pretty ugly.
               <br />
-              My plan is to switched the views portion over to React or Vue, as well as reinitialize a design scheme for the home view and profile portion of the website.
+              My plan is to switched the views portion over to React or Vue, as
+              well as reinitialize a design scheme for the home view and profile
+              portion of the website.
             </p>
             <h6>Technologies Used:</h6>
             <p>
@@ -270,7 +272,7 @@ const Projects = () => (
               color scheme depending on the season. While there is no button to
               view these changes live, developers can take a look at the
               <a href="https://github.com/tamitchell/landscaping/blob/master/src/components/App.js">
-              github
+                repository
               </a>
               to view the code of how this was implemented. It is currently
               under review.
@@ -354,23 +356,175 @@ const Projects = () => (
               Currently the site that is on display uses Firebase.
             </p>
             <br />
-            <h6>What I did</h6>
+            <h6>Conception and Quick Introduction of the Problem</h6>
             <p>
-              Used React JS framework to develop the SPA.
-              <br />
-              <br />
-              Used Object Oriented Programming concepts to develop UI components
-              that could be reused across the Web Application.
-              <br />
-              <br />
-              Develop GUI that interacts by inserting, updating, and deleting
-              data in a NoSQL database.
-              <br />
-              <br />
+              In the beginning, this application was heavily inspired by
+              Novelize, a simplified novel-writing application that helps
+              writers keep track of their writing flow, character progression,
+              and manuscripts. I would say it is best known for it's wide-range
+              customization features (i.e. the ability for the writer to add
+              custom categories of what they would like to keep track of) as
+              well as it's modern style and a rather simple interface that makes
+              it easy to use and quick to learn.
             </p>
+            <br />
+            <img
+              src="https://novelize.nyc3.digitaloceanspaces.com/articles/800/outline-mode.png"
+              alt="Novelize screenshot of it's many features"
+              title="Novelize screenshot"
+            />
+            <br />
 
             <p>
-              <strong>Technologies Used</strong>
+              That being said though, I, like many other writers are often
+              overcome by the ability to customize and will spend so much time
+              in the beginning designing characters, detailing backstories, and
+              drawing out story maps that when presented with (even still) the
+              white screen of emptiness and despair that we often immediately
+              fall into sea of writer's block and go back to the safe harbor of
+              detailing our would-be villans and superheros.
+            </p>
+            <br />
+
+            <p>
+              So I thought, how can I make this process easier for the writer?
+              What tools can I provide that would perhaps kickstart this turn of
+              events?
+            </p>
+            <h6>The Solution</h6>
+            <p>
+              Storyteller provides a temporarily solution to this by initially
+              offering the writer a sort of free writing structure or template
+              to kick off their overall writing process. It follows (for now at
+              least) Dan Harmon's guide of "The Story Embryo" directly to the
+              point of how most popular movies, TV shows, and novels follow a
+              sort of 8-step plan to developing a character, breaking that
+              characer down, and rebuilding him/her in a new or different
+              situation than they were in after a series of (un)fortunate
+              events.
+            </p>
+
+            <img
+              src="https://notjustamoviepodcast.files.wordpress.com/2014/08/story-circle.png"
+              alt="Artist depiction of the Story Embryo by Dan Harmon"
+              title="The Story Embryo"
+            />
+
+            <p>
+              While I still need to research on perhaps better or more thorough
+              guides, this is ultimately the idea of a feature I thought would
+              be a great asset to a site like Novelize that has really brimmed
+              on their potential and still have so many possibilities left to
+              conquer.
+            </p>
+            <h6>Features and User Stories</h6>
+            <p>
+              Currently such general features are thought to be of as such:
+              <ul>
+                <li>
+                  All users (regardless of authenticated or not) should be able
+                  to view all stories on the browsing page
+                </li>
+                <li>
+                  All users should be able to log in or create an account, via
+                  Google or through the site itself
+                </li>
+                <li>
+                  Authenticated users should be able to view the stories that
+                  they have written on a separate profile page with information
+                  pertaining to only them
+                </li>
+                <li>
+                  Authenticated users should be able to edit or delete only the
+                  stories that they have created.
+                </li>
+                <li>
+                  Authenticated users should have the ability to view other
+                  user's profile pages, but should not be able to edit or delete
+                  anything on said pages
+                </li>
+                <li>
+                  All users should have the ability to view most recently
+                  updated stories displayed on the browsing page.
+                </li>
+                <li>
+                  All users should be able to rate or 'like' stories, but the
+                  ability to downvote stories or 'dislike stories' should not be
+                  a thing
+                </li>
+                <li>
+                  All users should be able to search for stories based on genre,
+                  rating, or language
+                </li>
+                <li>
+                  Stories can either consist of chapters or stand-alone prose
+                </li>
+              </ul>
+            </p>
+            <h6>UX Challenges</h6>
+            <p>
+              Probably the biggest initial hurdle with the design of this was
+              choosing a proper color scheme that would help encourage the
+              writer to write. I had noticed that Novelize had choosen to go
+              with a warm orange color that is often associated with
+              friendliness and creativity, but for my choice I felt locked
+              between the decision to use a blue-based color palatte vs a
+              purple-based one.
+            </p>
+            <br />
+            <figure>
+              <img
+                src={require("../img/storyteller_colorscheme.png")}
+                alt="Rosy purplish color scheme"
+              />
+              <figcaption>First Choice and Currently Implemented</figcaption>
+            </figure>
+            <h6>UX Solutions</h6>
+            <p>
+              The reason for this challenge is less about what is most
+              aesthetically pleasing and moreso about choosing colors that would
+              fit the proper atmosphere for whatever time of day the author
+              wishes to write. While doing a bit of research and asking around,
+              it was revealed that most writers (although the time at which they
+              choose to write varies) openly admit that the time at which they
+              feel most creative is during the early evening up until they are
+              about to fall asleep. In this sense, I decided that working with a
+              brighter color like orange or light blue would be less ideal,
+              because those colors seem to be used more often than not to
+              control attention and to stimulate. Therefore, I decided to go
+              with a more rosy gold, purplish color scheme because I thought the
+              mood it encourages would be able to flux between both day and
+              night without incurring eye fatigue or boredom.
+            </p>
+            <h6>Developer Challenges</h6>
+            <p>
+              The core of my challenges code-wise lie in the initial way I've
+              drawn up the database infrastructure as well as my unfamiliarity
+              with Firebase and using online cloud storage as a database. My
+              current issue is that because I am unfamiliar with how to retrieve
+              nested data from the Firebase, the possibility the following tree
+              structure:
+              <br />
+              <br />
+              <code>user --> user's stories --> stories' chapters</code>
+              <br />
+              <br />
+
+              has become sort of a hassle to implement because I have yet to
+              find sufficient documentation on how to setup proper models with
+              firebase. From my experience however, it seems that Firebase has a
+              pretty flexbile infrastructure in that it merely adds on the
+              differences in structure when a user or admin updates a document,
+              and it is only when trying to pull this information back out on
+              the front end (say, if one document has a "names" property and
+              another doesn't within the same collection ) that you will then
+              begin to run into problems.
+
+            </p>
+            <h6>Developer Solutions</h6>
+            <p>Although is listed a somewhat cumbersome issue, really the only issue that's stopping me from progressing is lack of time</p>
+            <p>
+              <h6>Technologies Used</h6>
               <br />
               React.js, Express.js, Node.js, MVC, MongoDB/Mongoose, GraphQL,
               Firebase
