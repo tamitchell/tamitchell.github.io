@@ -567,7 +567,7 @@ const Projects = () => (
             <p>
               <strong>Technologies Used</strong>
               <br />
-              Javascript(ES6), React, JSX, Babel, HTML + SASS, DarkSky API,
+              JavaScript(ES6), ReactJS, HTML + SASS, DarkSky API,
               GeoCodio API, Surge (for deployment)
             </p>
           </article>
