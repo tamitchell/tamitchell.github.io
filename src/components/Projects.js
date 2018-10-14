@@ -600,7 +600,7 @@ const Projects = () => (
           <article>
             <p>
               <strong>This game</strong> is an interactive, role-playing game
-              for created learning and development
+              for created learning and development.
             </p>
 
             <p>
