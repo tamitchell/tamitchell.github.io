@@ -5,14 +5,15 @@
 $blue-crystal-light: #54C5F8;
 $blue-dark-sea: #00487C;
 $grey-dark-mercury: #3E6680;
-$blue-dull: #027BCE;
+$blue-dull: rgb(77, 137, 255);
+$side-panel-background: rgb(231, 234, 240);
 
 /*------------------------------------*\
     # Simple Typography Settings
 \*------------------------------------*/
 
 // Font Family
-$font-family: 'Martel', serif;
+$font-family: 'Roboto', serif;
 
 // Base Font for HTML
 $base-font-size: 16px;

@@ -1,5 +1,4 @@
 import React from "react";
-import { Modal, Button, Row, Card, CardTitle } from "react-materialize";
 import story from "../storyteller.png";
 
 const Projects = () => (

@@ -1,22 +1,24 @@
-import React, { Component, Fragment } from 'react';
-import {
-  BrowserRouter as Router,
-  Link,
-  Route,
-  Switch,
-} from 'react-router-dom';
-import '../sass/App.scss';
-import SidePanel from './SidePanel';
-
+import React, { Component } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import "../sass/App.scss";
+import { Container, Row, Col } from "reactstrap";
+import SidePanel from "./SidePanel";
+import BulkResumeData from './BulkResumeData';
 export default class App extends Component {
   render() {
     return (
-          <Router>
-        <Fragment>
-
-          <SidePanel/>
-        </Fragment>
-          </Router>
+      <Router>
+        <Container fluid={true}>
+          <Row>
+          <Col className="side-panel">
+          <SidePanel className="side-panel"/>
+          </Col>
+          <Col className="">
+            <BulkResumeData/>
+          </Col>
+          </Row>
+        </Container>
+      </Router>
     );
   }
 }

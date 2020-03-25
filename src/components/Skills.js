@@ -1,81 +1,71 @@
-import React from "react";
-import { Chip, Row, Col } from "react-materialize";
+import React, {useState} from "react";
+import { Container, Row, Collapse, Button,} from "reactstrap";
+import {
+  frontEnd,
+  backEnd,
+  dataBases,
+  design,
+  methodologies,
+  softSkills
+} from "./data";
 
-const Skills = () => (
-  <Row className="container skills-container">
-    <section className="wrapper">
-      <h1>Skills</h1>
-      <Row>
-        <Col s={12} m={12} l={12}>
-          <h5>Front End</h5>
-        </Col>
-        <Col s={12} m={12} l={12}>
-          <Chip>HTML</Chip>
-          <Chip>CSS3</Chip>
-          <Chip>Sass/Compass</Chip>
-          <Chip>React.js</Chip>
-          <Chip>Javascript (ES6)</Chip>
-          <Chip>jQuery</Chip>
-          <Chip>Bootstrap</Chip>
-          <Chip>Materialize</Chip>
-          <Chip>Handlebars.js</Chip>
-          <Chip>Babel</Chip>
-          <Chip>Webpack</Chip>
-        </Col>
+
+export const Skills = () => {
+  return (
+  <Container className="skills-content">
+    <Row>
+    <h2>Skills/Tools</h2>
+    </Row>
+    <div className="skill-list-container">
+      <Row className="skill-list">
+     <h4>Front End</h4>
+        <ul>
+          {frontEnd.map((skill, i) => {
+            return <li key={i}>{skill}</li>;
+          })}
+        </ul>
       </Row>
-
-      <Row>
-        <Col s={12} m={12} l={12}>
-          <h5>Back End</h5>
-        </Col>
-        <Col s={12} m={12} l={12}>
-          <Chip>Node.js</Chip>
-          <Chip>Python/Django</Chip>
-          <Chip>Express.js</Chip>
-          <Chip>JSON</Chip>
-        </Col>
+      <Row className="skill-list">
+        <h4>Back End</h4>
+        <ul>
+          {backEnd.map((skill, i) => {
+            return <li key={i}>{skill}</li>;
+          })}
+        </ul>
       </Row>
-
-      <Row>
-        <Col s={12} m={12}>
-          <h5>Data Bases</h5>
-        </Col>
-        <Col s={12} m={12}>
-          <Chip>Mongoose/MongoDB</Chip>
-          <Chip>NoSQL</Chip>
-          <Chip>PostgreSQL</Chip>
-          <Chip>SQL</Chip>
-          <Chip>GraphQL</Chip>
-        </Col>
+      <Row className="skill-list">
+        <h4>Databases</h4>
+        <ul>
+          {dataBases.map((skill, i) => {
+            return <li key={i}>{skill}</li>;
+          })}
+        </ul>
       </Row>
-
-      <Row>
-        <Col s={12} m={12}>
-          <h5>Methodologies</h5>
-        </Col>
-        <Col s={12} m={12}>
-          <Chip>Version Control</Chip>
-          <Chip>Agile Development/SCRUM</Chip>
-          <Chip>Wire-framing/User Stories</Chip>
-          <Chip>OOP (Object-Oriented Programming)</Chip>
-          <Chip>MVC Methodologies</Chip>
-        </Col>
+      <Row className="skill-list">
+        <h4>Methodologies</h4>
+        <ul>
+          {methodologies.map((skill, i) => {
+            return <li key={i}>{skill}</li>;
+          })}
+        </ul>
       </Row>
-
-      <Row>
-        <Col s={12} m={12}>
-          <h5>Miscellaneous</h5>
-        </Col>
-        <Col s={12} m={12}>
-          <Chip>AJAX</Chip>
-          <Chip>Responsive Web Design</Chip>
-          <Chip>Trilingual in Spanish, English, and Chinese</Chip>
-          <Chip>Adobe CS Suite</Chip>
-          <Chip>Graphic Design</Chip>
-        </Col>
+      <Row className="skill-list">
+        <h4>Design</h4>
+        <ul>
+          {design.map((skill, i) => {
+            return <li key={i}>{skill}</li>;
+          })}
+        </ul>
       </Row>
-    </section>
-  </Row>
-);
+      <Row className="skill-list">
+        <h4>Soft Skills</h4>
+        <ul>
+          {softSkills.map((skill, i) => {
+            return <li key={i}>{skill}</li>;
+          })}
+        </ul>
+      </Row>
+    </div>
+  </Container>
+  )};
 
-export default Skills;
