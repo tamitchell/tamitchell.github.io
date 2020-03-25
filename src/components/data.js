@@ -3,15 +3,15 @@ const profilePic = () => {
 };
 
 const profileData = {
-  name: "Tasha Mitchell",
+  name: "LeToya Jackson",
   occupationPrimary: "UX Designer",
   occupationSecondary: "Front End Developer",
-  email: "tamitchell153@gmail.com",
-  portfolio: "tamitchell.github.io",
-  phone: "4345794324",
-  placeOfWork: "Herndon, VA",
-  linkedInLink: "https://linkedin.com/in/tashamitchell",
-  githubLink: "https://www.github.com/tamitchell"
+  email: "email@email.com",
+  portfolio: "letoya.github.io",
+  phone: "123456789",
+  placeOfWork: "Place, NA",
+  linkedInLink: "https://linkedin.com/in/letoya",
+  githubLink: "https://www.github.com/letoya"
 };
 
 const frontEnd = [
