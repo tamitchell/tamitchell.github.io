@@ -1,0 +1,5 @@
+
+// REM mixin to calculate all font sizes across type.
+@function rem($px, $base: $base-font-size) {
+    @return ($px / $base) * 1rem;
+}

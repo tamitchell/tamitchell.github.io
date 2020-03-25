@@ -1,0 +1,47 @@
+/*---------------------------------------------*\
+      # Simple Flutter Blues Color Palette
+\*---------------------------------------------*/
+
+$blue-crystal-light: #54C5F8;
+$blue-dark-sea: #00487C;
+$grey-dark-mercury: #3E6680;
+$blue-dull: #027BCE;
+
+/*------------------------------------*\
+    # Simple Typography Settings
+\*------------------------------------*/
+
+// Font Family
+$font-family: 'Martel', serif;
+
+// Base Font for HTML
+$base-font-size: 16px;
+
+// Paragraph Styles
+$paragraph-color      : #333333;
+$paragraph-size       : rem(17px);
+$paragraph-line-height: 1.5em;
+$paragraph-margin     : 20px;
+
+// Header Styles
+$header-color      : #333333;
+$header-size       : rem(40px);
+$header-line-height: 1.25em;
+$header-margin     : $paragraph-margin * 1.2;
+
+// Blockquote Styles
+$blockquote-color      : #505050;
+$blockquote-size       : rem(23px);
+$blockquote-line-height: 1.5em;
+$blockquote-margin     : $paragraph-margin * 1.5;
+
+// Links
+$link-color: #0496FF;
+
+// hr
+$hr-margin: 30px;
+
+// Type Misc
+$font-weight-bold: 800;
+$border-color: #DADADA;
+
