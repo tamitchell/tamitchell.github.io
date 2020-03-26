@@ -2,9 +2,11 @@
 
 @import './abstract/mixins';
 @import './abstract/variables';
+@import './abstract/placeholder';
 
 @import './base/reset';
 @import './base/typography';
 
 @import './components/side-panel';
 @import './components/container';
+@import './projects';

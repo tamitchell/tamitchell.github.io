@@ -19,7 +19,7 @@ const Profile = () => (
     </Row>
     <Row>
       <div className="profile-content">
-        <h2>{profileData.name}</h2>
+        <h1>{profileData.name}</h1>
         <h6>
           {profileData.occupationPrimary} | {profileData.occupationSecondary}
         </h6>

@@ -1,0 +1,23 @@
+@import './variables';
+@import './mixins';
+
+.resume-object {
+    margin-top: 2em;
+}
+
+.education-object {
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+    .img-container {
+        max-width: 150px;
+        img {
+            @include center-by-margin();
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .education-content {
+        // padding-top: 1em;
+    }
+}

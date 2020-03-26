@@ -2,9 +2,8 @@
 @import "../abstract/mixins";
 
 .side-panel {
-  width: 20vw;
+  max-width: 400px;
   min-width: 400px;
-  height: 100vh;
   background: $side-panel-background;
   .inner-container {
     width: 80%;
@@ -26,17 +25,11 @@
 }
 
 .profile-content {
-  h2 {
-    font-size: 32px;
-    margin: 15px 0 0 0;
-  }
-  h6 {
-    margin-top: 0;
-    font-weight: normal;
-  }
-  h2,
+  margin: 20px 0;
+  width: 100%;
   h6 {
     text-align: center;
+    margin-bottom: 10px;
     text-transform: uppercase;
   }
   p {
@@ -48,25 +41,18 @@
 }
 
 .skills-content {
-  padding: 20px 0;
-
-  h2 {
-    border-bottom: 5px solid $blue-dull;
-    font-size: 24px;
-  }
+  @include margin-padding-reset();
 
   .skill-list {
+    display: block;
+    @include margin-padding-reset();
     h4 {
       text-transform: uppercase;
       margin: 15px 0;
+      width: 100%;
     }
     li {
-        list-style-type: none;
+      list-style-type: none;
     }
-  }
-
-  .skill-list-container {
-      max-height: 45vh;
-      overflow-y: auto;
   }
 }

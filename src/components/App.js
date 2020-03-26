@@ -3,17 +3,17 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "../sass/App.scss";
 import { Container, Row, Col } from "reactstrap";
 import SidePanel from "./SidePanel";
-import BulkResumeData from './BulkResumeData';
+import BulkResumeData from './resume-content/BulkResumeData';
 export default class App extends Component {
   render() {
     return (
       <Router>
-        <Container fluid={true}>
-          <Row>
-          <Col className="side-panel">
-          <SidePanel className="side-panel"/>
+        <Container className="ultima" fluid={true}>
+          <Row className="resume-container">
+          <Col lg={'auto'} className="side-panel">
+          <SidePanel/>
           </Col>
-          <Col className="">
+          <Col className="resume-content">
             <BulkResumeData/>
           </Col>
           </Row>
