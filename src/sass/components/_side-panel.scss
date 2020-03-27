@@ -2,8 +2,6 @@
 @import "../abstract/mixins";
 
 .side-panel {
-  max-width: 400px;
-  min-width: 400px;
   background: $side-panel-background;
   .inner-container {
     width: 80%;
@@ -43,14 +41,11 @@
 .skills-content {
   @include margin-padding-reset();
 
+  padding: 0 !important;
+  margin: 0 !important;
   .skill-list {
     display: block;
     @include margin-padding-reset();
-    h4 {
-      text-transform: uppercase;
-      margin: 15px 0;
-      width: 100%;
-    }
     li {
       list-style-type: none;
     }

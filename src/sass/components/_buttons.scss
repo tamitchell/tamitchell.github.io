@@ -1,0 +1,38 @@
+@import '../abstract/mixins';
+@import "../abstract/variables";
+
+.confirmation-button {
+    background: $blue-dull;
+    background-color: $blue-dull;
+    color: $white;
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            color: inherit;
+        }
+    }
+}
+
+.card-button {
+    margin: 10px;
+    width:18vw;
+    min-width: 300px;
+    min-height: 30vh;
+    max-height: 30vh;
+    background-color: transparent !important;
+    border: none !important;
+    p {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1em;
+      letter-spacing: 2px;
+       color: $paragraph-color;
+    }
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.2s ease-in-out;
+    }
+  }
+  
+  

@@ -6,12 +6,11 @@ import { educationData } from "../data";
 const Education = () => (
   <Container className="resume-object">
     <h2>Education</h2>
-    <section>
       {educationData.college.map((school, i) => {
         return (
           <Container fluid={true} className="education-object" key={i}>
             <Row>
-              <Col className="img-container">
+              <Col className="img-container d-none d-lg-block d-print-none">
                 <img src={school.logo} alt={school.logo + " Official Logo"} />
               </Col>
               <Col className="education-content">
@@ -26,7 +25,6 @@ const Education = () => (
           </Container>
         );
       })}
-    </section>
   </Container>
 );
 

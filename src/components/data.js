@@ -1,17 +1,20 @@
+const storyteller = () => {
+  return require("../img/storyteller.png");
+};
 const profilePic = () => {
   return require("../img/profile-me.jpg");
 };
 
 const profileData = {
-  name: "LeToya Jackson",
+  name: "Tasha Mitchell",
   occupationPrimary: "UX Designer",
   occupationSecondary: "Front End Developer",
-  email: "email@email.com",
-  portfolio: "letoya.github.io",
+  email: "tamitchell@gmail.com",
+  portfolio: "tamitchell.github.io",
   phone: "123456789",
-  placeOfWork: "Place, NA",
-  linkedInLink: "https://linkedin.com/in/letoya",
-  githubLink: "https://www.github.com/letoya"
+  placeOfWork: "Herndon, VA",
+  linkedInLink: "https://www.linkedin.com/in/tashamitchell/",
+  githubLink: "https://github.com/tamitchell"
 };
 
 const frontEnd = [
@@ -110,30 +113,33 @@ const experienceData = [
   {
     logo: require("../img/logo/bah.png"),
     jobName: "Booz Allen Hamilton",
-    jobTitle: "Front-End Developer",
+    jobTitle: "Senior Consultant | Front-End Developer",
     location: "Alexandria, VA",
     dateStarted: "Jan 2019​ ",
     dateEnded: null,
     companyLink: null,
     skillsUsed: [
-      "Work directly with clients to establish project scope, interaction guidelines, and project timelines.",
-      "Design working prototypes using Adobe XD, InVision, Photoshop and Illustrator for government-related projects",
-      "Developed front-end web pages by using HTML5, CSS, SCSS, and JavaScript, taking advantage of frameworks such as React and AngularJS."
+      "Served support role providing guidance to team members, project and product development support, process mentoring, and product technical assessments.",
+      "As a mid-level developer, coded some of the more complicated solutions including dynamic page controls and dynamic tabbing and page scrolling.",
+      "Reduced testing effort for integration teams by more than 70% by setting up chain of internal testing that can be performed by both UX developer teams before automated deployments are completed.",
+      "Developed and promoted the usage of small, modularized components in Angular 8 framework, allowing for quick reuse and customization for cross-team use.",
+      "Improved current CSS library used by instilling a modularized SCSS file structure for organization of styling per category rather than per component"
     ]
   },
   {
     logo: require("../img/logo/bah.png"),
     jobName: "Booz Allen Hamilton",
-    jobTitle: "UX Designer",
+    jobTitle: "Senior Consultant | UX Designer",
     location: "Alexandria, VA",
     dateStarted: "Jan 2019​ ",
     dateEnded: null,
     companyLink: null,
     skillsUsed: [
-      "Work directly with clients to establish project scope, interaction guidelines, and project timelines.",
-      "Designed a user-friendly, configurable navigation system that became the standard for all other related UI on the project. This technique allows mapping and defaulting of data as well as the ability to preview and adjust the data on-screen prior to updating.",
+      "Conducted and lead  communication processes for UX and Dev teams, involving UX Reviews and open standups between cross-functional teams resulting in higher quality output of development",
+      "Designed a user-friendly, configurable navigation system that became the standard for all other related UIs on the project. The technique designed allowed mapping and defaulting of data as well as the ability to preview and adjust the data on-screen prior to updating.",
       "Designed and generated fully-interactive prototypes and click-throughs which were used for client presentations, mock-ups, as well as user-testing studies.",
-      "Redefined information architecture and interaction design for new integration of old UI using page/user flow diagrams, site maps, and interactive wireframes created in Invision/Adobe XD."
+      "Analyzed data gathered from user research into meaningful reports for business clients, enhancing relationship between clientele and project leads during project demos.",
+      "Leveraged client based requests against government initiated design codes  such as 508 Compliance, US Standards of Text Accessibility, and overall Usability"
     ]
   },
   {
@@ -166,7 +172,7 @@ const experienceData = [
       "Collaborates with COO and CEO of company to ensure graphic accuracy, consistency, and high quality",
       "Workflow tools used: Adobe Illustrator, Photoshop, Autodesk Sketchbook Pro"
     ]
-  }, 
+  },
   {
     logo: require("../img/logo/srt.png"),
     jobName: "SRTLabs: Science Robotics and Technology	",
@@ -181,7 +187,7 @@ const experienceData = [
       "Collaborates with agile team to migrate beta project to MVP that uses ReactJS, Symphony, PHP, and MySQL",
       "Participates in day-to-day meeting, status meeting, strong reporting and effective communication with project manager and developers."
     ]
-  },
+  }
 ];
 
 const projectData = [
@@ -190,42 +196,52 @@ const projectData = [
     previewImage: "https://media.giphy.com/media/2yyK43mkxnMSasviry/giphy.gif",
     deployedApplication: "https://growthsphere.herokuapp.com/",
     githubLink: "https://github.com/tamitchell/hair-journal",
-    projectSummary: "Growthsphereis an online web application initially designed to create a space for African American women to track their Natural hair growth progress. What's more than a web application that logs hair regimens and product outcomes, I am hoping that this application can evolve to become a space where women of color can come to share, collaborate, and talk about their hair!",
-    technologiesUsed: "NoSQL - MongoDB, Mongoose as ODM (Object Document Mapping), Express.js, Handlebars, Node.js, Passport (for user authentication)"
+    projectSummary:
+      "Growthsphereis an online web application initially designed to create a space for African American women to track their Natural hair growth progress. What's more than a web application that logs hair regimens and product outcomes, I am hoping that this application can evolve to become a space where women of color can come to share, collaborate, and talk about their hair!",
+    technologiesUsed:
+      "NoSQL - MongoDB, Mongoose as ODM (Object Document Mapping), Express.js, Handlebars, Node.js, Passport (for user authentication)"
   },
   {
     projectName: "Happy Tail VA LLC",
     previewImage: "https://media.giphy.com/media/XoUUsG3Vgu3KgtYqRN/giphy.gif",
     deployedApplication: "http://happytail-dev.surge.sh/",
     githubLink: "https://github.com/tamitchell/HappyTailLLC",
-    projectSummary: "Happy Tails VA LLC is an upcoming dog walking company who wanted a launch site to expand to their growing clientel.",
-    technologiesUsed: "Javascript(ES5), HTML + SASS, Bootstrap, Surge (for deployment)"
+    projectSummary:
+      "Happy Tails VA LLC is an upcoming dog walking company who wanted a launch site to expand to their growing clientel.",
+    technologiesUsed:
+      "Javascript(ES5), HTML + SASS, Bootstrap, Surge (for deployment)"
   },
   {
-    projectName: "Storyteller: A Web Appication for Short Stories",
-    previewImage: "https://media.giphy.com/media/XoUUsG3Vgu3KgtYqRN/giphy.gif",
-    deployedApplication: null,
+    projectName: "Storyteller",
+    previewImage: {storyteller},
+    deployedApplication: "https://storyteller-ss.surge.sh/",
     githubLink: "https://github.com/tamitchell/storyteller",
-    projectSummary: "Storyteller: A Web Appication for Short Stories is a modern organizational web app that helps to organize and write novels, poetry, and prose. While this project originally incorporated MERN (MongoDB, Express, React, and Node), I am currently refactoring it to also incorporate GraphQL. Therefore, it has been taken down from production.",
-    technologiesUsed: "React.js, Express.js, Node.js, MVC, MongoDB/Mongoose, GraphQL"
+    projectSummary:
+      "Storyteller: A Web Appication for Short Stories is a modern organizational web app that helps to organize and write novels, poetry, and prose. While this project originally incorporated MERN (MongoDB, Express, React, and Node), I am currently refactoring it to also incorporate GraphQL. Therefore, it has been taken down from production.",
+    technologiesUsed:
+      "React.js, Express.js, Node.js, MVC, MongoDB/Mongoose, GraphQL"
   },
   {
     projectName: "First Call Weather",
     previewImage: "https://media.giphy.com/media/9M6RmfvTSk98V4IhqH/giphy.gif",
     deployedApplication: "https://firstcall-weather.surge.sh/",
     githubLink: null,
-    projectSummary: "First Call - Weather App</strong> is A React Based Application that uses Dark Sky's web API to gather weather data and Geocodio's API to render weather conditions based on user's desired location.",
-    technologiesUsed: "Javascript(ES6), React, JSX, Babel, HTML + SASS, DarkSky API, GeoCodio API, Surge (for deployment)"
+    projectSummary:
+      "First Call - Weather App</strong> is A React Based Application that uses Dark Sky's web API to gather weather data and Geocodio's API to render weather conditions based on user's desired location.",
+    technologiesUsed:
+      "Javascript(ES6), React, JSX, Babel, HTML + SASS, DarkSky API, GeoCodio API, Surge (for deployment)"
   },
   {
     projectName: "Browser Web Game",
     previewImage: "https://media.giphy.com/media/9xcljsereXGXDrdWas/giphy.gif",
     deployedApplication: "https://tamitchell.github.io/simple-game/",
     githubLink: "https://github.com/tamitchell/simple-game",
-    projectSummary: "This game is an interactive, role-playing game for created learning and development",
-    technologiesUsed: "HTML, Sass/CSS, Vanilla Javascript (ES6), GH pages (for deployment)"
+    projectSummary:
+      "This game is an interactive, role-playing game for created learning and development",
+    technologiesUsed:
+      "HTML, Sass/CSS, Vanilla Javascript (ES6), GH pages (for deployment)"
   }
-]
+];
 export {
   profileData,
   profilePic,

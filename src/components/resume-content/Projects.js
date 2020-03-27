@@ -1,55 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Row,
-  Col,
-  Card,
-  CardTitle,
-  Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter
 } from "reactstrap";
-import { projectData, profileData } from "../data";
+import { projectData } from "../data";
+import CustomModal from '../CustomModal';
+import { Spinner } from 'reactstrap';
+
 
 const Projects = () => {
-  const [modal, setModal] = useState(false);
 
-  const toggle = () => setModal(!modal);
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 3000);
+  }, );
+
+
   return (
     <Container className="resume-object">
       <h2>Web Development Projects</h2>
-      <Row>
+     { isLoaded ? <Row>
         {projectData.map((project, i) => {
+          const props = {
+            modalTitle: project.projectName,
+            modalImg: project.previewImage,
+            modalBody: [project.projectSummary, project.technologiesUsed],
+            link: project.deployedApplication,
+            githubLink: project.githubLink,
+            confirmText: "See Application",
+            dismissalText: "Close",
+            className: 'card-button'
+          }
           return (
-            <div key={i}>
-              <Button className={`project${i} card-button`} onClick={toggle}>
-                <p>{project.projectName}</p>
-              </Button>
-              <Modal isOpen={modal} toggle={toggle}>
-                <ModalHeader toggle={toggle}>{project.projectName}</ModalHeader>
-                <ModalBody>
-                  <img src={project.previewImage} alt={project.projectName + ' Preview Image '}/>
-                  <p>{project.projectSummary}</p>
-                  <p>{project.technologiesUsed}</p>
-                </ModalBody>
-                <ModalFooter>
-                  <Button color="primary">
-                    <a href={project.deployedApplication}>
-                      See Deployed
-                    </a>
-                  </Button>{" "}
-                  <Button color="secondary" onClick={toggle}>
-                    Close
-                  </Button>
-                </ModalFooter>
-              </Modal>
-            </div>
+           <CustomModal key={i} props={props}/>
           );
         })}
+      </Row> : <Row>
+      <Spinner size="lg" type="grow" color="primary" />
       </Row>
-    </Container>
+}    </Container>
   );
 };
 

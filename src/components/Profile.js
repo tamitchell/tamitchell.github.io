@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faGlobeAmericas,
-  faPhone
+  faMapMarked
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -13,8 +13,8 @@ import { profileData } from "./data";
 const Profile = () => (
   <Container>
     <Row>
-      <div className="profile-pic-container">
-        <img src={require("../img/profile-me.jpg")} />
+      <div className="profile-pic-container d-print-none">
+        <img oncontextmenu="return false" src={require("../img/profile-me.jpg")} alt="The developer" />
       </div>
     </Row>
     <Row>
@@ -36,9 +36,7 @@ const Profile = () => (
         </p>
         <p>
           {" "}
-          <a href={`tel:+0${profileData.phone}`}>
-            <FontAwesomeIcon icon={faPhone} /> {profileData.phone}{" "}
-          </a>{" "}
+            <FontAwesomeIcon icon={faMapMarked} /> {profileData.placeOfWork}{" "}
         </p>
         <p>
           {" "}

@@ -6,12 +6,11 @@ import { experienceData } from "../data";
 const ProfessionalExperience = () => (
   <Container className="resume-object">
     <h2>Professional Experience</h2>
-    <section>
       {experienceData.map((job, i) => {
         return (
-          <Container fluid={true} key={i} className="education-object">
+          <Container fluid={true} key={i} className="education-object ">
             <Row>
-              <Col className="img-container">
+              <Col className="img-container d-none d-lg-block d-print-none">
                 <img src={job.logo} alt={job.jobName + " Official Logo"} />
               </Col>
               <Col className="education-content">
@@ -35,7 +34,6 @@ const ProfessionalExperience = () => (
           </Container>
         );
       })}
-    </section>
   </Container>
 );
 

@@ -8,7 +8,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <Container className="ultima" fluid={true}>
+        <Container fluid={true}>
           <Row className="resume-container">
           <Col lg={'auto'} className="side-panel">
           <SidePanel/>
