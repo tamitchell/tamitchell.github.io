@@ -1,0 +1,53 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+.side-panel {
+  background: $side-panel-background;
+  .inner-container {
+    width: 80%;
+    @include center-by-margin();
+  }
+}
+
+.profile-pic-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  @include center-by-margin($margin-top-bottom: 20px);
+  img {
+    width: 100%;
+    height: 100%;
+    @include margin-padding-reset();
+  }
+}
+
+.profile-content {
+  margin: 20px 0;
+  width: 100%;
+  h6 {
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 5px;
+  }
+  svg {
+    margin: 8px 5px 0 0;
+  }
+}
+
+.skills-content {
+  @include margin-padding-reset();
+
+  padding: 0 !important;
+  margin: 0 !important;
+  .skill-list {
+    display: block;
+    @include margin-padding-reset();
+    li {
+      list-style-type: none;
+    }
+  }
+}

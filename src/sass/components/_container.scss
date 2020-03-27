@@ -1,0 +1,7 @@
+@import '../abstract/mixins';
+
+.resume-content {
+    width: 100%;
+    margin: 2em 1em;
+    .inner-container {float: left;}
+}
