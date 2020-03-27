@@ -14,7 +14,11 @@ const Profile = () => (
   <Container>
     <Row>
       <div className="profile-pic-container d-print-none">
-        <img oncontextmenu="return false" src={require("../img/profile-me.jpg")} alt="The developer" />
+        <img
+          oncontextmenu="return false"
+          src={require("../img/profile-me.jpg")}
+          alt="The developer"
+        />
       </div>
     </Row>
     <Row>
@@ -36,7 +40,7 @@ const Profile = () => (
         </p>
         <p>
           {" "}
-            <FontAwesomeIcon icon={faMapMarked} /> {profileData.placeOfWork}{" "}
+          <FontAwesomeIcon icon={faMapMarked} /> {profileData.placeOfWork}{" "}
         </p>
         <p>
           {" "}

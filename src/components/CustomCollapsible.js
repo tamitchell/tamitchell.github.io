@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Collapse, Button } from "reactstrap";
+import { Collapse } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,8 +19,7 @@ const CustomCollapsible = props => {
   console.log(status);
   return (
     <div className="subtle-collapsible">
-      <Button
-        color="primary"
+      <button
         id={"toggler" + id}
         className={status}
         style={{ marginBottom: "1rem" }}
@@ -28,7 +27,7 @@ const CustomCollapsible = props => {
       >
         <h4>{title}</h4>{" "}
         <FontAwesomeIcon className="collapsible-icon" icon={faCaretRight} />
-      </Button>
+      </button>
       <Collapse
         isOpen={collapse}
         onEntering={onEntering}

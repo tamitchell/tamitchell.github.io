@@ -5,3 +5,26 @@
     margin: 2em 1em;
     .inner-container {float: left;}
 }
+
+.app {
+    max-width: 1600px;
+    background-color: $white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+    @include center-by-margin();
+}
+
+.call-to-action-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media all and (max-width: 699px) {
+    .call-to-action-row {
+        margin: 1em 2em;
+        button {
+            width: 95%;
+        }
+    }
+}
