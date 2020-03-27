@@ -22,9 +22,21 @@
 
 @media all and (max-width: 699px) {
     .call-to-action-row {
-        margin: 1em 2em;
+        margin: 2em 0;
         button {
-            width: 95%;
+            width: 100%;
+        }
+    }
+
+    .education-content {
+        .paragraphs-inline {
+            display: block;
+            p {
+                text-align: left;
+            }
+        }
+        ul li {
+            list-style-type: none;
         }
     }
 }

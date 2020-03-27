@@ -12,10 +12,12 @@ const BulkResumeData = () => {
 
   return (
     <Container className="inner-container">
+     <Container>
      <Row className="call-to-action-row">
         <button className="confirmation-button">
           <a href={resumePDF} download>Download Resume</a></button>
       </Row>
+       </Container>
       <ProfessionalSummary/>
       <Education/>
       <ProfessionalExperience/>
