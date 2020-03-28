@@ -38,8 +38,8 @@ const Projects = () => {
            <CustomModal key={i} props={props}/>
           );
         })}
-      </Row> : <Row>
-      <Spinner size="lg" type="grow" color="primary" />
+      </Row> : <Row className="loading-container">
+      <Spinner class="loading-icon" size="lg" type="grow" color="primary" />
       </Row>
 }    </Container>
   );
