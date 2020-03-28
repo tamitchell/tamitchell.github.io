@@ -1,15 +1,19 @@
 {
   "main.css": "static/css/main.f38c523e.css",
   "main.css.map": "static/css/main.f38c523e.css.map",
-  "main.js": "static/js/main.bbe005a2.js",
-  "main.js.map": "static/js/main.bbe005a2.js.map",
+  "main.js": "static/js/main.b2eff554.js",
+  "main.js.map": "static/js/main.b2eff554.js.map",
   "static/media/bah.png": "static/media/bah.f6cd832b.png",
   "static/media/dalian.png": "static/media/dalian.5821707d.png",
   "static/media/desi.png": "static/media/desi.19950bfb.png",
+  "static/media/first-call.gif": "static/media/first-call.68e05fda.gif",
   "static/media/gmu.png": "static/media/gmu.934af197.png",
+  "static/media/growthsphere.gif": "static/media/growthsphere.7c1fba0e.gif",
+  "static/media/happy-tail.gif": "static/media/happy-tail.87f3d3d3.gif",
   "static/media/meti.png": "static/media/meti.d21a0578.png",
   "static/media/profile-me.jpg": "static/media/profile-me.e904aca4.jpg",
   "static/media/resume_portfolio.pdf": "static/media/resume_portfolio.77ed548d.pdf",
   "static/media/srt.png": "static/media/srt.1f7c0fbe.png",
-  "static/media/storyteller.png": "static/media/storyteller.9b08cb70.png"
+  "static/media/storyteller.png": "static/media/storyteller.9b08cb70.png",
+  "static/media/web-game.gif": "static/media/web-game.d1ec1c2b.gif"
 }
