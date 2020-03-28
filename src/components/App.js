@@ -4,6 +4,7 @@ import "../sass/App.scss";
 import { Container, Row, Col } from "reactstrap";
 import SidePanel from "./SidePanel";
 import BulkResumeData from './resume-content/BulkResumeData';
+import Footer from './Footer';
 export default class App extends Component {
   render() {
     return (
@@ -16,6 +17,9 @@ export default class App extends Component {
           <Col className="resume-content">
             <BulkResumeData/>
           </Col>
+          </Row>
+          <Row>
+            <Footer/>
           </Row>
         </Container>
       </Router>

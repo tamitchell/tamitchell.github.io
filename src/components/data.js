@@ -1,6 +1,4 @@
-const storyteller = () => {
-  return require("../img/storyteller.png");
-};
+;
 const profilePic = () => {
   return require("../img/profile-me.jpg");
 };
@@ -9,7 +7,7 @@ const profileData = {
   name: "Tasha Mitchell",
   occupationPrimary: "UX Designer",
   occupationSecondary: "Front End Developer",
-  email: "tamitchell@gmail.com",
+  email: "tmitchell5801@gmail.com",
   portfolio: "tamitchell.github.io",
   phone: "123456789",
   placeOfWork: "Herndon, VA",
@@ -193,7 +191,7 @@ const experienceData = [
 const projectData = [
   {
     projectName: "Growthsphere",
-    previewImage: "https://media.giphy.com/media/2yyK43mkxnMSasviry/giphy.gif",
+    previewImage: require('../img/growthsphere.gif'),
     deployedApplication: "https://growthsphere.herokuapp.com/",
     githubLink: "https://github.com/tamitchell/hair-journal",
     projectSummary:
@@ -203,7 +201,7 @@ const projectData = [
   },
   {
     projectName: "Happy Tail VA LLC",
-    previewImage: "https://media.giphy.com/media/XoUUsG3Vgu3KgtYqRN/giphy.gif",
+    previewImage: require('../img/happy-tail.gif'),
     deployedApplication: "http://happytail-dev.surge.sh/",
     githubLink: "https://github.com/tamitchell/HappyTailLLC",
     projectSummary:
@@ -213,7 +211,7 @@ const projectData = [
   },
   {
     projectName: "Storyteller",
-    previewImage: {storyteller},
+    previewImage: require('../img/storyteller.png'),
     deployedApplication: "https://storyteller-ss.surge.sh/",
     githubLink: "https://github.com/tamitchell/storyteller",
     projectSummary:
@@ -223,7 +221,7 @@ const projectData = [
   },
   {
     projectName: "First Call Weather",
-    previewImage: "https://media.giphy.com/media/9M6RmfvTSk98V4IhqH/giphy.gif",
+    previewImage: require('../img/first-call.gif'),
     deployedApplication: "https://firstcall-weather.surge.sh/",
     githubLink: null,
     projectSummary:
@@ -233,7 +231,7 @@ const projectData = [
   },
   {
     projectName: "Browser Web Game",
-    previewImage: "https://media.giphy.com/media/9xcljsereXGXDrdWas/giphy.gif",
+    previewImage: require('../img/web-game.gif'),
     deployedApplication: "https://tamitchell.github.io/simple-game/",
     githubLink: "https://github.com/tamitchell/simple-game",
     projectSummary:

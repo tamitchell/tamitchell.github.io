@@ -24,9 +24,9 @@ const Profile = () => (
     <Row>
       <div className="profile-content">
         <h1>{profileData.name}</h1>
-        <h6>
+        <h4>
           {profileData.occupationPrimary} | {profileData.occupationSecondary}
-        </h6>
+        </h4>
         <p>
           <a href={`mailto:${profileData.email}`}>
             <FontAwesomeIcon icon={faEnvelope} /> {profileData.email}{" "}
