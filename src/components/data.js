@@ -119,7 +119,7 @@ const experienceData = [
     skillsUsed: [
       "Served support role providing guidance to team members, project and product development support, process mentoring, and product technical assessments.",
       "As a mid-level developer, coded some of the more complicated solutions including dynamic page controls and dynamic tabbing and page scrolling.",
-      "Reduced testing effort for integration teams by more than 70% by setting up chain of internal testing that can be performed by both UX developer teams before automated deployments are completed.",
+      "Reduced testing effort for integration teams by more than 70% by setting up chain of internal testing that can be performed by both UX and development teams before automated deployments are completed.",
       "Developed and promoted the usage of small, modularized components in Angular 8 framework, allowing for quick reuse and customization for cross-team use.",
       "Improved current CSS library used by instilling a modularized SCSS file structure for organization of styling per category rather than per component"
     ]
@@ -164,9 +164,9 @@ const experienceData = [
     dateEnded: "Jan 2019",
     companyLink: null,
     skillsUsed: [
-      "Provides graphic design support for projects with production status including layout alterations, color corrections, resizing existing projects, and designing new projects based on existing creative or established guidelines",
-      "Create graphics, slide templates and PPT materials for meetings and appropriate mock-ups for client",
-      "Researching, assisting and presenting new ideas for creative marketing campaign.",
+      "Provided graphic design support for projects with production status including layout alterations, color corrections, resizing existing projects, and designing new projects based on existing creative or established guidelines",
+      "Created graphics, slide templates and PPT materials for meetings and appropriate mock-ups for client",
+      "Researched and presented new ideas for creative marketing campaign.",
       "Collaborates with COO and CEO of company to ensure graphic accuracy, consistency, and high quality",
       "Workflow tools used: Adobe Illustrator, Photoshop, Autodesk Sketchbook Pro"
     ]
@@ -181,9 +181,9 @@ const experienceData = [
     companyLink: null,
     skillsUsed: [
       "Responsible for implementation of the presentation layer (GUI) for the application.",
-      "Troubleshooting of reported problems with the Ticketing system(Jira)",
-      "Collaborates with agile team to migrate beta project to MVP that uses ReactJS, Symphony, PHP, and MySQL",
-      "Participates in day-to-day meeting, status meeting, strong reporting and effective communication with project manager and developers."
+      "Troubleshooted and reported problems with ticketing system(Jira)",
+      "Collaborated with agile team to migrate beta project to MVP that uses ReactJS, Symphony, PHP, and MySQL",
+      "Participated in day-to-day meeting, status meeting, strong reporting and effective communication with project manager and developers."
     ]
   }
 ];

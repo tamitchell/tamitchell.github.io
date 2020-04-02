@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import resumePDF from "../documents/resume_portfolio.pdf";
+import resumePDF from "../documents/mitchell_tasha_resume_portfolio.pdf";
 
 const Footer = () => (
   <Container fluid={true} className="footer">
