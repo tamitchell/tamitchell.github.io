@@ -16,7 +16,6 @@ const CustomCollapsible = props => {
 
   const onExited = () => setStatus("Closed");
 
-  console.log(status);
   return (
     <div className="subtle-collapsible">
       <button
