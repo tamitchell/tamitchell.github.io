@@ -5,8 +5,8 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 const CustomCollapsible = props => {
   const { content, title, id } = props;
-  const [collapse, setCollapse] = useState(false);
-  const [status, setStatus] = useState("Closed");
+  const [collapse, setCollapse] = useState(true);
+  const [status, setStatus] = useState("Opened");
   const toggle = () => setCollapse(!collapse);
   const onEntering = () => setStatus("Opening...");
 
