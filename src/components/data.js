@@ -238,6 +238,16 @@ const projectData = [
       "This game is an interactive, role-playing game for created learning and development",
     technologiesUsed:
       "HTML, Sass/CSS, Vanilla Javascript (ES6), GH pages (for deployment)"
+  },
+  {
+    projectName: "Landscaping Client Template",
+    previewImage: require('../img/landscaping.png'),
+    deployedApplication: "https://landscaping-template.surge.sh",
+    githubLink: "https://github.com/tamitchell/landscaping",
+    projectSummary:
+      "This was a design proposal for an upcoming business who wanted to do residential and commercial landscaping. This client has since moved on to become the owner of the Diversified Electric Service Company.",
+    technologiesUsed:
+      "React, SCSS, Bootstrap"
   }
 ];
 export {
