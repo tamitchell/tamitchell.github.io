@@ -70,9 +70,9 @@ const softSkills = [
 
 const summaryData = {
   paragraph1:
-    "Tasha is a Web Developer/Designer Hybrid with a passion for bringing words from mere paper and concepts into a visual reality that’s both thought-provoking and interactive. Coming from a strong background in studying and speaking multiple languages (including Spanish and Chinese), Tasha displays a formidable talent in not only learning quickly, but also excelling in new disciplines that she comes across - demonstrable by her consistent line of projects and paid ventures that have helped to establish and maintain her growing network and potential within the small business community.",
+    "Tasha is a Web Developer/Designer Hybrid with a passion for bringing words from mere paper and concepts into a visual reality that’s both thought-provoking and interactive. Her biggest asset is her fortitude for creating a detailed vision and that she is able to maintain from the beginning of the project to the end. Her qualities not only add up to make her a great designer, but overall, someone highly skilled in the talent of both crafting and materializing human narratives that reach a vast variety of people, cultures, and organizations.",
   paragraph2:
-    "As a new and promising consultant, Tasha's biggest asset is her fortitude for creating a detailed vision and that she is able to maintain from the beginning the project to end. Her qualities not only add up to make her a great programmer, but overall, someone highly skilled in the talent of both crafting and materializing human narratives that reach vast variety of people, cultures, and organizations."
+    ""
 };
 
 const educationData = {
