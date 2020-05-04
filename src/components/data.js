@@ -127,7 +127,7 @@ const experienceData = [
   {
     logo: require("../img/logo/bah.png"),
     jobName: "Booz Allen Hamilton",
-    jobTitle: "Senior Consultant | UX Designer",
+    jobTitle: "Senior Consultant | Lead UX Designer",
     location: "Alexandria, VA",
     dateStarted: "Jan 2019​ ",
     dateEnded: null,
@@ -242,7 +242,7 @@ const projectData = [
   {
     projectName: "Landscaping Client Template",
     previewImage: require('../img/landscaping.png'),
-    deployedApplication: "https://landscaping-template.surge.sh",
+    deployedApplication: "landscaping-template.surge.sh",
     githubLink: "https://github.com/tamitchell/landscaping",
     projectSummary:
       "This was a design proposal for an upcoming business who wanted to do residential and commercial landscaping. This client has since moved on to become the owner of the Diversified Electric Service Company.",
