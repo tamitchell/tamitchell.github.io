@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
-import { experienceData } from "../data";
+import { experienceData } from "../data/data";
 
 const ProfessionalExperience = () => (
   <Container className="resume-object">
@@ -11,7 +11,7 @@ const ProfessionalExperience = () => (
           <Container fluid={true} key={i} className="education-object ">
             <Row>
               <Col className="img-container d-none d-lg-block d-print-none">
-                <img src={job.logo} alt={job.jobName + " Official Logo"} />
+                <a href={job.companyLink}><img src={job.logo} alt={job.jobName + " Official Logo"} /></a>
               </Col>
               <Col className="education-content">
                 <h4>{job.jobName}</h4>

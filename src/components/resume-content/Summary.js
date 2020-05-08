@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "reactstrap";
-import { summaryData } from "../data";
+import { summaryData } from "../data/data";
 
 const ProfessionalSummary = () => (
   <Container>

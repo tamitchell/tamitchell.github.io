@@ -3,7 +3,7 @@ import {
   Container,
   Row,
 } from "reactstrap";
-import { projectData } from "../data";
+import { projectData } from "../data/data";
 import CustomModal from '../CustomModal';
 import { Spinner } from 'reactstrap';
 
@@ -39,7 +39,7 @@ const Projects = () => {
           );
         })}
       </Row> : <Row className="loading-container">
-      <Spinner class="loading-icon" size="lg" type="grow" color="primary" />
+      <Spinner className="loading-icon" size="lg" type="grow" color="primary" />
       </Row>
 }    </Container>
   );

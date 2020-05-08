@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
-import { educationData } from "../data";
+import { educationData } from "../data/data";
 
 const Education = () => (
   <Container className="resume-object">

@@ -1,0 +1,15 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.navigation {
+    padding: 1em;
+    height: $navigation-bar-height;
+    background-color: $blue-dark-sea;
+    margin: 0 auto;
+}
+
+.nav-button {
+    background: transparent;
+    border-color: transparent;
+    color: $white;
+}
