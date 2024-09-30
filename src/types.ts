@@ -1,0 +1,36 @@
+export interface ProfileData {
+    name: string;
+    occupationPrimary: string;
+    occupationSecondary?: string;
+    email: string;
+    portfolio: string;
+    phone: string;
+    placeOfWork: string;
+    linkedInLink: string;
+    githubLink: string;
+  }
+
+  export interface ExperienceData {
+    logo: string; // Assuming these are relative paths
+    jobName: string;
+    jobTitle: string;
+    location: string;
+    dateStarted: string;
+    dateEnded?: string | null; // This can be null or a string
+    companyLink?: string | null; // Optional company link
+    skillsUsed: string[]; // An array of skills or tasks
+  }
+
+  export interface ProjectData {
+    projectName: string;
+    previewImage: string; // Path to the image
+    deployedApplication: string;
+    githubLink: string | null;
+    projectSummary: string;
+    technologiesUsed: string; // List of technologies as a string
+  }
+
+  export interface SkillCategory {
+    title: string;
+    content: string[]; 
+  }
