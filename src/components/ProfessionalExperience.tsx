@@ -9,11 +9,11 @@ export default function ProfessionalExperience(): JSX.Element {
       <div className="experience-object mb-6" key={i}>
         <div className="flex items-center">
         <div className="flex-shrink-0 self-start w-20 h-20 md:w-26 md:h-26 lg:w-30 lg:h-30 bg-white flex items-center justify-center overflow-hidden">
-        <img
+        {job.logo && <img
           src={job.logo}
           alt={`${job.jobName} Official Logo`}
           className="max-w-full max-h-full object-contain"
-        />
+        />}
       </div>
           <div className="experience-content ml-4">
             <h4 className="text-xl font-semibold">{job.jobName}</h4>

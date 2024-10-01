@@ -38,7 +38,7 @@ export default function ProjectModal({ modalTitle,
     <div>
       {/* Modal Trigger */}
       <button onClick={openModal} className="m-2 w-[18vw] min-w-[300px] min-h-[30vh] max-h-[30vh] bg-transparent border-none hover:scale-105 transition-transform duration-200 ease-in-out">
-        <img src={modalImg} alt={`${modalTitle} Image Button Overlay`} />
+        <img src={modalImg} alt={`${modalTitle} Image Button Overlay`} loading="lazy" />
         <p className="text-center uppercase text-base tracking-wide text-gray-700">
           {modalTitle}
         </p>
@@ -95,10 +95,10 @@ export default function ProjectModal({ modalTitle,
         <ModalFooter isOpen={isModalOpen} toggle={toggle}>
           {/* Modal Footer */}
           <div className="flex justify-end p-4 border-t-2">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded mr-2">
+            {link && <button className="bg-blue-500 text-white px-4 py-2 rounded mr-2">
               <a href={link} target="_blank" rel="noopener noreferrer" >See Application</a>
-            </button>
-            <button className="bg-gray-300 text-gray-800 px-4 py-2 rounded" onClick={closeModal}>
+            </button>}
+            <button className="bg-gray-300 text-gray-800 px-4 py-2 rounded" title={"Close Modal"} onClick={closeModal}>
               Close
             </button>
           </div>

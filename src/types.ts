@@ -11,8 +11,8 @@ export interface ProfileData {
   }
 
   export interface ExperienceData {
-    logo: string; // Assuming these are relative paths
-    jobName: string;
+    logo?: string; // Assuming these are relative paths
+    jobName?: string;
     jobTitle: string;
     location: string;
     dateStarted: string;
@@ -24,7 +24,7 @@ export interface ProfileData {
   export interface ProjectData {
     projectName: string;
     previewImage: string; // Path to the image
-    deployedApplication: string;
+    deployedApplication?: string;
     githubLink: string | null;
     projectSummary: string;
     technologiesUsed: string; // List of technologies as a string

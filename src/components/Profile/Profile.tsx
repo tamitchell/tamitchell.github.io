@@ -6,7 +6,7 @@ import { ProfilePicture } from "./ProfilePicture";
 
 
 export default function Profile(): JSX.Element {
-    return <FadeUp cascade className="flex flex-col p-4">
+    return <FadeUp cascade className="flex flex-col px-4 py-0">
     <ProfilePicture />
     <ProfileNameAndOccupation />
     <ProfileContact />
