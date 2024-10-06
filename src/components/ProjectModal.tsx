@@ -10,7 +10,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 interface ProjectModalProps {
   modalTitle: string;
   modalBody: string[];
-  modalImg: string;
+  modalImg: string | null;
   confirmText: string;
   dismissalText: string;
   githubLink: string | null;
@@ -30,7 +30,6 @@ export default function ProjectModal({ modalTitle,
   const closeModal = () => setModalOpen(false);
   const toggle = () => setModalOpen(!isModalOpen);
   const handleConfirm = () => {
-    alert("Confirmed!");
     closeModal();
   };
 
@@ -38,7 +37,7 @@ export default function ProjectModal({ modalTitle,
     <div>
       {/* Modal Trigger */}
       <button onClick={openModal} className="m-2 w-[18vw] min-w-[300px] min-h-[30vh] max-h-[30vh] bg-transparent border-none hover:scale-105 transition-transform duration-200 ease-in-out">
-        <img src={modalImg} alt={`${modalTitle} Image Button Overlay`} loading="lazy" />
+        {modalImg && <img src={modalImg} alt={`${modalTitle} Image Button Overlay`} loading="lazy" />}
         <p className="text-center uppercase text-base tracking-wide text-gray-700">
           {modalTitle}
         </p>

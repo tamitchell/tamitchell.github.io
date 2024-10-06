@@ -23,7 +23,7 @@ export interface ProfileData {
 
   export interface ProjectData {
     projectName: string;
-    previewImage: string; // Path to the image
+    previewImage: string | null; // Path to the image
     deployedApplication?: string;
     githubLink: string | null;
     projectSummary: string;
