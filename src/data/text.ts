@@ -7,7 +7,7 @@ import bahLogo from "@assets/logo/bah.png";
 import desiLogo from "@assets/logo/desi.png";
 import metiLogo from "@assets/logo/meti.png";
 import srtLogo from "@assets/logo/srt.png";
-import growthsphere from "@assets/growthsphere.png";
+// import growthsphere from "@assets/growthsphere.png";
 import happyTailGif from "@assets/happy-tail.gif";
 // import storytellerImg from "@assets/storyteller.png";
 // import firstCallGif from "@assets/first-call.gif";

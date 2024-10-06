@@ -20,7 +20,7 @@ export default function Skills(): JSX.Element {
 
       {/* Mapping over skill categories to render collapsibles */}
       <div className="skill-list-container space-y-4">
-        {skillCategories.map((category, index) => (
+        {skillCategories.map(category => (
           <div key={category.id} className="animate-fadeUp delay-100">
             <CustomCollapsible
               className="subtle-collapsible"
