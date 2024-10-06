@@ -9,10 +9,11 @@ import metiLogo from "@assets/logo/meti.png";
 import srtLogo from "@assets/logo/srt.png";
 import growthsphereGif from "@assets/growthsphere.gif";
 import happyTailGif from "@assets/happy-tail.gif";
-import storytellerImg from "@assets/storyteller.png";
-import firstCallGif from "@assets/first-call.gif";
-import webGameGif from "@assets/web-game.gif";
-import landscapingImg from "@assets/landscaping.png";
+// import storytellerImg from "@assets/storyteller.png";
+// import firstCallGif from "@assets/first-call.gif";
+// import webGameGif from "@assets/web-game.gif";
+// import landscapingImg from "@assets/landscaping.png";
+import firstWatchWeather from "@assets/firstwatchweather.png";
 
 const profileData: ProfileData = {
   name: "Tasha Mitchell",
@@ -257,46 +258,46 @@ const projectData: ProjectData[] = [
     technologiesUsed:
       "Javascript(ES5), HTML + SASS, Bootstrap, Surge (for deployment)"
   },
+  // {
+  //   projectName: "Storyteller",
+  //   previewImage: storytellerImg,
+  //   deployedApplication: "https://storyteller-ss.surge.sh/",
+  //   githubLink: "https://github.com/tamitchell/storyteller",
+  //   projectSummary:
+  //     "Storyteller: A Web Appication for Short Stories is a modern organizational web app that helps to organize and write novels, poetry, and prose. While this project originally incorporated MERN (MongoDB, Express, React, and Node), I am currently refactoring it to also incorporate GraphQL. Therefore, it has been taken down from production.",
+  //   technologiesUsed:
+  //     "React.js, Express.js, Node.js, MVC, MongoDB/Mongoose, GraphQL"
+  // },
   {
-    projectName: "Storyteller",
-    previewImage: storytellerImg,
-    deployedApplication: "https://storyteller-ss.surge.sh/",
-    githubLink: "https://github.com/tamitchell/storyteller",
-    projectSummary:
-      "Storyteller: A Web Appication for Short Stories is a modern organizational web app that helps to organize and write novels, poetry, and prose. While this project originally incorporated MERN (MongoDB, Express, React, and Node), I am currently refactoring it to also incorporate GraphQL. Therefore, it has been taken down from production.",
-    technologiesUsed:
-      "React.js, Express.js, Node.js, MVC, MongoDB/Mongoose, GraphQL"
-  },
-  {
-    projectName: "First Call Weather",
-    previewImage: firstCallGif,
-    // deployedApplication: "https://firstcall-weather.surge.sh/",
+    projectName: "First Watch Weather",
+    previewImage: firstWatchWeather,
+    deployedApplication: "https://weatherapp-iqzqeicbj-tashas-projects-4e4847e8.vercel.app",
     githubLink: "https://github.com/tamitchell/weatherapp",
     projectSummary:
-      "First Call - Weather App is A React Based Application that uses Dark Sky's web API to gather weather data and Geocodio's API to render weather conditions based on user's desired location.",
+      "First Watch Weather - Weather App is A React Based Application that uses OpenWeathers's and Google Map Places API to gather weather data and Geocodio's API to render weather conditions based on user's desired location.",
     technologiesUsed:
       "A React, NextJS Based Application that uses OpenWeather's weather forecast API and Geocodio's API to render weather conditions based on user's current and/or desired location"
   },
-  {
-    projectName: "Browser Web Game",
-    previewImage: webGameGif,
-    deployedApplication: "https://tamitchell.github.io/simple-game/",
-    githubLink: "https://github.com/tamitchell/simple-game",
-    projectSummary:
-      "You found a momento! I keep this here because it was first project using javascript. This game is an interactive, role-playing game for created learning and development.",
-    technologiesUsed:
-      "HTML, Sass/CSS, Vanilla Javascript (ES6), GH pages (for deployment)"
-  },
-  {
-    projectName: "Landscaping Client Template",
-    previewImage: landscapingImg,
-    deployedApplication: "landscaping-template.surge.sh",
-    githubLink: "https://github.com/tamitchell/landscaping",
-    projectSummary:
-      "This was a design proposal for an upcoming business who wanted to do residential and commercial landscaping. This client has since moved on to become the owner of the Diversified Electric Service Company.",
-    technologiesUsed:
-      "React, SCSS, Bootstrap"
-  }
+  // {
+  //   projectName: "Browser Web Game",
+  //   previewImage: webGameGif,
+  //   deployedApplication: "https://tamitchell.github.io/simple-game/",
+  //   githubLink: "https://github.com/tamitchell/simple-game",
+  //   projectSummary:
+  //     "You found a momento! I keep this here because it was first project using javascript. This game is an interactive, role-playing game for created learning and development.",
+  //   technologiesUsed:
+  //     "HTML, Sass/CSS, Vanilla Javascript (ES6), GH pages (for deployment)"
+  // },
+  // {
+  //   projectName: "Landscaping Client Template",
+  //   previewImage: landscapingImg,
+  //   deployedApplication: "landscaping-template.surge.sh",
+  //   githubLink: "https://github.com/tamitchell/landscaping",
+  //   projectSummary:
+  //     "This was a design proposal for an upcoming business who wanted to do residential and commercial landscaping. This client has since moved on to become the owner of the Diversified Electric Service Company.",
+  //   technologiesUsed:
+  //     "React, SCSS, Bootstrap"
+  // }
 ];
 export {
   profileData,
