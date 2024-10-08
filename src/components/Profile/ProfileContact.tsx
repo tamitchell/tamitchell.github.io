@@ -10,11 +10,11 @@ import { profileData } from "../../data/text";
 export function ProfileContact(): JSX.Element {
   return (
     <div className="text-left">
-      <p className="my-2">
+      {profileData.email && <p className="my-2">
         <a href={`mailto:${profileData.email}`} className="hover:text-blue-cornflower">
           <FontAwesomeIcon icon={faEnvelope} /> {profileData.email}
         </a>
-      </p>
+      </p>}
       <p className="my-2">
         <a
           href={`http://${profileData.portfolio}/`}

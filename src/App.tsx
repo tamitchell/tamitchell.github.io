@@ -2,6 +2,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import SidePanel from './components/SidePanel';
 import Footer from './components/Footer';
 import BulkResumeContent from './components/BulkResumeContent';
+import clsx from 'clsx';
 
 /**
  * TODO
@@ -11,16 +12,24 @@ import BulkResumeContent from './components/BulkResumeContent';
 function App() {
 
   return (
-<Router>
-      <div className="w-full min-h-screen flex flex-col">
-        
-        <div className="flex flex-row flex-1 bg-cloud-light">
-          
-          <div className="w-auto md:w-1/4 h-full bg-cloud-light">
+    <Router>
+      <>
+
+        <div className={clsx("min-h-screen w-full",
+      "flex flex-col sm:flex-row")}>
+
+          <div className={clsx("bg-cloud-light", "w-full min-w-[320px]",
+            "sm:w-1/2 md:w-1/3",
+            "sm:max-w-[425px]",
+            "md:max-w-[30vw]",
+            "md:min-h-screen")}>
             <SidePanel />
           </div>
-          
-          <div className="flex-1 bg-white">
+
+          <div className={clsx("flex-1 bg-white", "w-full",
+        "sm:flex-1",
+        "md:min-h-screen", 
+        "overflow-y-auto",)}>
             <BulkResumeContent />
           </div>
         </div>
@@ -28,7 +37,7 @@ function App() {
         <div className="w-full bg-gray-200">
           <Footer />
         </div>
-      </div>
+      </>
     </Router>
   )
 }

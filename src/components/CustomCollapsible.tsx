@@ -37,7 +37,7 @@ interface CustomCollapsibleProps {
           <div     ref={contentRef}
         className={clsx(
           "transition-all duration-300 overflow-hidden",
-          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          isOpen ? " opacity-100" : "max-h-0 opacity-0"
         )}
         style={{ maxHeight: isOpen ? contentRef.current?.scrollHeight : 0 }}>
             <ul className="list-none no-underline list-inside text-no-decoration">

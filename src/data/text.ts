@@ -7,19 +7,14 @@ import bahLogo from "@assets/logo/bah.png";
 import desiLogo from "@assets/logo/desi.png";
 import metiLogo from "@assets/logo/meti.png";
 import srtLogo from "@assets/logo/srt.png";
-// import growthsphere from "@assets/growthsphere.png";
 import happyTailGif from "@assets/happy-tail.gif";
-// import storytellerImg from "@assets/storyteller.png";
-// import firstCallGif from "@assets/first-call.gif";
-// import webGameGif from "@assets/web-game.gif";
-// import landscapingImg from "@assets/landscaping.png";
 import firstWatchWeather from "@assets/firstwatchweather.png";
 
 const profileData: ProfileData = {
   name: "Tasha Mitchell",
   occupationPrimary: "Senior UX Engineer",
   occupationSecondary: "Front End Developer",
-  email: "tmitchell5801@gmail.com",
+  email: null,
   portfolio: "tamitchell.github.io",
   phone: "123456789",
   placeOfWork: "Remote (DMV)",
@@ -140,7 +135,7 @@ const experienceData: ExperienceData[] = [
     ]
   },
   {
-    // logo: srtLogo,
+    logo: srtLogo,
     jobName: "Science Robotics and Technology	",
     jobTitle: "UX Designer",
     location: "Remote",
@@ -172,12 +167,12 @@ const experienceData: ExperienceData[] = [
     ]
   },
   {
-    // logo: bahLogo,
+    logo: bahLogo,
     jobName: "Booz Allen Hamilton",
     jobTitle: "Senior Consultant | Lead UX Designer",
     location: "Alexandria, VA",
     dateStarted: "Jan 2019​ ",
-    dateEnded: null,
+    dateEnded: "Feb 2021",
     companyLink: null,
     skillsUsed: [
       "Led cross-functional collaboration between UX and development teams, implementing structured UX review processes and facilitating open standup meetings, which significantly improved communication and resulted in higher quality output of development",
@@ -271,7 +266,7 @@ const projectData: ProjectData[] = [
   {
     projectName: "First Watch Weather",
     previewImage: firstWatchWeather,
-    deployedApplication: "https://weatherapp-iqzqeicbj-tashas-projects-4e4847e8.vercel.app",
+    deployedApplication: "https://weatherapp-nine-mauve.vercel.app/",
     githubLink: "https://github.com/tamitchell/weatherapp",
     projectSummary:
       "First Watch Weather - Weather App is A React Based Application that uses OpenWeathers's and Google Map Places API to gather weather data and Geocodio's API to render weather conditions based on user's desired location.",

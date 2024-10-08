@@ -2,7 +2,7 @@ export interface ProfileData {
     name: string;
     occupationPrimary: string;
     occupationSecondary?: string;
-    email: string;
+    email: string | null;
     portfolio: string;
     phone: string;
     placeOfWork: string;

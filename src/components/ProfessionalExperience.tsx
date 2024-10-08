@@ -6,26 +6,27 @@ export default function ProfessionalExperience(): JSX.Element {
     return <FadeUp cascade className="resume-object w-full p-4">
       <SectionTitle title="Professional Experience" />
     {experienceData.map((job, i) => (
-      <div className="experience-object mb-6" key={i}>
-        <div className="flex items-center">
-        <div className="flex-shrink-0 self-start w-20 h-20 md:w-26 md:h-26 lg:w-30 lg:h-30 bg-white flex items-center justify-center overflow-hidden">
-        {job.logo && <img
-          src={job.logo}
-          alt={`${job.jobName} Official Logo`}
-          className="max-w-full max-h-full object-contain"
-        />}
-      </div>
-          <div className="experience-content ml-4">
+        <div className="mb-6" key={i}>
+        <div className="flex flex-col items-center sm:flex-row sm:items-start">
+          <div className="w-20 h-20 md:w-26 md:h-26 lg:w-30 lg:h-30 bg-white flex items-center justify-center overflow-hidden mb-4 sm:mb-0 sm:mr-4 flex-shrink-0">
+            <div className="w-full h-full relative" style={{ aspectRatio: '1 / 1' }}>
+              <img
+                src={job.logo}
+                alt={`${job.jobName} Official Logo`}
+                className="absolute inset-0 w-full h-full object-contain"
+              />
+            </div>
+          </div>
+          <div className="text-center sm:text-left flex-grow">
             <h4 className="text-xl font-semibold">{job.jobName}</h4>
-            <div className="flex justify-between items-center self-start">
+            <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start flex-wrap">
               <h5 className="text-lg font-semibold uppercase text-[#888] py-2">{job.jobTitle}</h5>
-              <p>
-                {job.location} <br />
+              <p className="text-center sm:text-right">
                 {job.dateStarted}{" "}
                 {job.dateEnded !== null ? "to " + job.dateEnded : "to Current"}
               </p>
             </div>
-            <ul className="list-disc ml-6 mt-4">
+            <ul className="list-disc ml-6 mt-4 text-left">
               {job.skillsUsed.map((skill, i) => (
                 <li key={i}>{skill}</li>
               ))}
