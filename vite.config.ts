@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
+  base: "https://github.com/tamitchell/tamitchell.github.io",
   resolve: {
     alias: {
       '@components': path.resolve(__dirname, './src/components'),
