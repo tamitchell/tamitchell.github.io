@@ -34,3 +34,6 @@ export interface ProfileData {
     title: string;
     content: string[]; 
   }
+
+ export type Size = 'large' | 'medium' | 'small';
+export type Orientation = 'vertical' | 'horizontal';
