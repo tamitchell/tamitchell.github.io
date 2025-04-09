@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import BulkResumeContent from './components/BulkResumeContent';
 import ProjectDetail from './components/ProjectDetail';
 import clsx from 'clsx';
-import HeroSection from './components/HeroSection';
 
 /**
  * Main layout component for the home page

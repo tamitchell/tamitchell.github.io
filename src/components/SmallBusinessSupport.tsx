@@ -1,42 +1,30 @@
 import FadeUp from "./FadeUp/FadeUp";
 import SectionTitle from "./SectionTitle";
-import { smallBusinessData } from "../data/text";
-import { ExperienceData } from "../types";
-import { useState } from "react";
 import happyTailLogo from "../assets/logo/happyTailLLC.png";
 import desiLogo from "../assets/logo/desi.png";
 import metiLogo from "../assets/logo/meti.png";
 import sehaLogo from "../assets/logo/sehaConsulting.png";
 
 // Group small business experiences by time periods
-const timelinePeriods = [
-  {
-    period: "2025",
-    jobs: smallBusinessData.filter(job => 
-      job.dateStarted.includes("2025") || 
-      (job.dateEnded && job.dateEnded.includes("2025"))
-    )
-  },
-  {
-    period: "2018 - 2019",
-    jobs: smallBusinessData.filter(job => 
-      job.dateStarted.includes("2018") || 
-      job.dateStarted.includes("2019") || 
-      (job.dateEnded && job.dateEnded.includes("2019"))
-    )
-  }
-];
+// const timelinePeriods = [
+//   {
+//     period: "2025",
+//     jobs: smallBusinessData.filter(job => 
+//       job.dateStarted.includes("2025") || 
+//       (job.dateEnded && job.dateEnded.includes("2025"))
+//     )
+//   },
+//   {
+//     period: "2018 - 2019",
+//     jobs: smallBusinessData.filter(job => 
+//       job.dateStarted.includes("2018") || 
+//       job.dateStarted.includes("2019") || 
+//       (job.dateEnded && job.dateEnded.includes("2019"))
+//     )
+//   }
+// ];
 
 export default function SmallBusinessSupport(): JSX.Element {
-  const [expandedJobs, setExpandedJobs] = useState<{[key: string]: boolean}>({});
-
-  const toggleJobDetails = (jobId: string) => {
-    setExpandedJobs(prev => ({
-      ...prev,
-      [jobId]: !prev[jobId]
-    }));
-  };
-
   return (
     <FadeUp cascade className="resume-object w-full p-4">
       <SectionTitle title="Small Business Support" />
