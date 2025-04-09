@@ -1,4 +1,5 @@
 import Education from "./Education";
+import HeroSection from "./HeroSection";
 import ProfessionalExperience from "./ProfessionalExperience";
 import ProfessionalSummary from "./ProfessionalSummary";
 import Projects from "./Projects";

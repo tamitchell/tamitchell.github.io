@@ -3,6 +3,7 @@ import {
   faEnvelope,
   faGlobeAmericas,
   faMapMarked,
+  faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { profileData } from "../../data/text";
@@ -36,6 +37,15 @@ export function ProfileContact(): JSX.Element {
           <FontAwesomeIcon icon={faGithub} /> tamitchell
         </a>
       </p>
+      {profileData.openToWork && (
+        <p className="my-2 flex items-center">
+          <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+          <span className="flex items-center">
+            Open to Work
+            <span className="ml-2 inline-block w-3 h-3 rounded-full bg-green-500 animate-pulse" title="Open to Work"></span>
+          </span>
+        </p>
+      )}
     </div>
   );
 }

@@ -8,6 +8,7 @@ export interface ProfileData {
     placeOfWork: string;
     linkedInLink: string;
     githubLink: string;
+    openToWork: boolean;
   }
 
   export interface ExperienceData {

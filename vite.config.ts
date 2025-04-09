@@ -3,7 +3,11 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react()
+  ],
+  // Ensure markdown files are treated as assets
+  assetsInclude: ['**/*.md'],
   base: '/',
   resolve: {
     alias: {

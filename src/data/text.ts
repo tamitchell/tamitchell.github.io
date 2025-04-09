@@ -8,8 +8,9 @@ import desiLogo from "@assets/logo/desi.png";
 import metiLogo from "@assets/logo/meti.png";
 import srtLogo from "@assets/logo/srt.png";
 import sehaLogo from "@assets/logo/sehaConsulting.png";
-import happyTailGif from "@assets/happy-tail.gif";
 import firstWatchWeather from "@assets/firstwatchweather.png";
+import libraryCatalogingSystem from "@assets/library_catalog.png";
+import boredJar from "@assets/projects/bored_jar/concept_bored_jar.png";
 
 const profileData: ProfileData = {
   name: "Tasha Mitchell",
@@ -20,7 +21,8 @@ const profileData: ProfileData = {
   phone: "123456789",
   placeOfWork: "Remote (DMV)",
   linkedInLink: "https://www.linkedin.com/in/tashamitchell/",
-  githubLink: "https://github.com/tamitchell"
+  githubLink: "https://github.com/tamitchell",
+  openToWork: true,
 };
 
 const frontEnd = [
@@ -205,9 +207,8 @@ const experienceData: ExperienceData[] = [
 
 const projectData: ProjectData[] = [
   {
-    projectName: "Library Cataloging System",
-    previewImage: null,
-    deployedApplication: "https://library-cataloging-system-rfht-nrcwqb1of.vercel.app/",
+    projectName: "The Bored Jar",
+    previewImage: boredJar,
     githubLink: null,
     projectSummary:
       "A comprehensive library cataloging system that stores and organizes books using MARC records. Users can input bibliographic information (title, author, publisher, ISBN) and save it in a structured format. Features include search functionality for retrieving records by various metadata fields, import/export of MARC records, filtering by categories, and an admin interface for managing records.",
@@ -215,25 +216,25 @@ const projectData: ProjectData[] = [
       "Node.js, Express.js, MongoDB, React"
   },
   {
-    projectName: "Growthsphere.io",
-    previewImage: null,
-    // deployedApplication: "https://growthsphere.herokuapp.com/",
-    githubLink: "https://github.com/tamitchell/hair-journal",
+    projectName: "Library Cataloging System",
+    previewImage: libraryCatalogingSystem,
+    deployedApplication: "https://library-cataloging-system-rfht-nrcwqb1of.vercel.app/",
+    githubLink: null,
     projectSummary:
-      "Growthsphere is an online web application initially designed to create a space for African American women to track their Natural hair growth progress. What's more than a web application that logs hair regimens and product outcomes, I am hoping that this application can evolve to become a space where women of color can come to share, collaborate, and talk about their hair!",
+      "A comprehensive library cataloging system that stores and organizes books using MARC records. Users can input bibliographic information (title, author, publisher, ISBN) and save it in a structured format. Features include search functionality for retrieving records by various metadata fields, import/export of MARC records, filtering by categories, and an admin interface for managing records.",
     technologiesUsed:
-      "Materialize(CSS library), HTML5, SASS, CSS, MongoDB/Mongoose, Express.js, Handlebars, Node.js, Passport (for user authentication), React (updated branch)"
+      "Node.js, Express.js, MongoDB, React"
   },
-  {
-    projectName: "Happy Tail VA LLC",
-    previewImage: happyTailGif,
-    deployedApplication: "http://happytail-dev.surge.sh/",
-    githubLink: "https://github.com/tamitchell/HappyTailLLC",
-    projectSummary:
-      "Happy Tails VA LLC is an upcoming dog walking company who wanted a launch site to expand to their growing clientel.",
-    technologiesUsed:
-      "Javascript(ES5), HTML + SASS, Bootstrap, Surge (for deployment)"
-  },
+  // {
+  //   projectName: "Growthsphere.io",
+  //   previewImage: null,
+  //   // deployedApplication: "https://growthsphere.herokuapp.com/",
+  //   githubLink: "https://github.com/tamitchell/hair-journal",
+  //   projectSummary:
+  //     "Growthsphere is an online web application initially designed to create a space for African American women to track their Natural hair growth progress. What's more than a web application that logs hair regimens and product outcomes, I am hoping that this application can evolve to become a space where women of color can come to share, collaborate, and talk about their hair!",
+  //   technologiesUsed:
+  //     "Materialize(CSS library), HTML5, SASS, CSS, MongoDB/Mongoose, Express.js, Handlebars, Node.js, Passport (for user authentication), React (updated branch)"
+  // },
   // {
   //   projectName: "Storyteller",
   //   previewImage: storytellerImg,

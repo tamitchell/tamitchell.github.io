@@ -21,10 +21,15 @@ export default {
           '0%': { opacity: 0, transform: 'translateY(20px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
+        pulse: {
+          '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+          '50%': { opacity: 0.6, transform: 'scale(1.2)' },
+        },
     },
   },
   animation: {
     fadeUp: 'fadeUp 0.5s ease-out', // Adjust timing and easing as needed
+    pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),

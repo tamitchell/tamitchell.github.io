@@ -1,0 +1,63 @@
+/* Table of Contents Styling */
+
+.toc-sidebar {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.toc-sidebar h3 {
+  color: #2d3748;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.toc-item {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.toc-item.active {
+  background-color: rgba(66, 153, 225, 0.1);
+}
+
+.toc-item:hover {
+  background-color: rgba(66, 153, 225, 0.05);
+}
+
+/* Depth-based styling */
+.toc-item.depth-1 {
+  font-weight: 600;
+}
+
+.toc-item.depth-2 {
+  font-weight: 500;
+}
+
+.toc-item.depth-3,
+.toc-item.depth-4,
+.toc-item.depth-5,
+.toc-item.depth-6 {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+/* Animation for active state */
+.toc-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #3182ce;
+  transform: scaleY(1);
+  transition: transform 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .toc-sidebar {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+}
