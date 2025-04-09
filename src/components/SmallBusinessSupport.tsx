@@ -1,38 +1,29 @@
-import { experienceData } from "../data/text";
 import FadeUp from "./FadeUp/FadeUp";
 import SectionTitle from "./SectionTitle";
+import { smallBusinessData } from "../data/text";
+import { ExperienceData } from "../types";
 import { useState } from "react";
 
-// Group experiences by time periods
+// Group small business experiences by time periods
 const timelinePeriods = [
   {
-    period: "2021 - Now",
-    jobs: experienceData.filter(job => 
-      job.dateStarted.includes("2021") || 
-      job.dateStarted.includes("2022") || 
-      job.dateStarted.includes("2023") || 
-      job.dateStarted.includes("2024") || 
-      job.dateStarted.includes("2025")
-    )
-  },
-  {
-    period: "2019 - 2021",
-    jobs: experienceData.filter(job => 
-      job.dateStarted.includes("2019") || 
-      job.dateStarted.includes("2020") ||
-      (job.dateEnded && job.dateEnded.includes("2021"))
+    period: "2025",
+    jobs: smallBusinessData.filter(job => 
+      job.dateStarted.includes("2025") || 
+      (job.dateEnded && job.dateEnded.includes("2025"))
     )
   },
   {
     period: "2018 - 2019",
-    jobs: experienceData.filter(job => 
+    jobs: smallBusinessData.filter(job => 
       job.dateStarted.includes("2018") || 
+      job.dateStarted.includes("2019") || 
       (job.dateEnded && job.dateEnded.includes("2019"))
     )
   }
 ];
 
-export default function ProfessionalExperience(): JSX.Element {
+export default function SmallBusinessSupport(): JSX.Element {
   const [expandedJobs, setExpandedJobs] = useState<{[key: string]: boolean}>({});
 
   const toggleJobDetails = (jobId: string) => {
@@ -44,14 +35,14 @@ export default function ProfessionalExperience(): JSX.Element {
 
   return (
     <FadeUp cascade className="resume-object w-full p-4">
-      <SectionTitle title="Professional Experience" />
+      <SectionTitle title="Small Business Support" />
       <div className="mt-8">
-        <h3 className="text-2xl font-semibold mb-6">A Yearly snapshot of my professional growth</h3>
+        <h3 className="text-2xl font-semibold mb-6">Consulting and freelance projects</h3>
         
         {timelinePeriods.map((timePeriod, periodIndex) => (
           <div key={periodIndex} className="mb-12">
-            {timePeriod.jobs.map((job, jobIndex) => {
-              const jobId = `${periodIndex}-${jobIndex}`;
+            {timePeriod.jobs.map((job: ExperienceData, jobIndex: number) => {
+              const jobId = `sb-${periodIndex}-${jobIndex}`;
               const isExpanded = expandedJobs[jobId] || false;
               
               return (
@@ -86,7 +77,7 @@ export default function ProfessionalExperience(): JSX.Element {
                       
                       {isExpanded && (
                         <ul className="list-disc ml-14 mt-4 text-left">
-                          {job.skillsUsed.map((skill, i) => (
+                          {job.skillsUsed.map((skill: string, i: number) => (
                             <li key={i} className="mb-2">{skill}</li>
                           ))}
                         </ul>

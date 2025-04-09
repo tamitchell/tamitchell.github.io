@@ -7,6 +7,7 @@ import bahLogo from "@assets/logo/bah.png";
 import desiLogo from "@assets/logo/desi.png";
 import metiLogo from "@assets/logo/meti.png";
 import srtLogo from "@assets/logo/srt.png";
+import sehaLogo from "@assets/logo/sehaConsulting.png";
 import happyTailGif from "@assets/happy-tail.gif";
 import firstWatchWeather from "@assets/firstwatchweather.png";
 
@@ -116,6 +117,7 @@ const educationData = {
   ]
 };
 
+// Main professional experience data
 const experienceData: ExperienceData[] = [
   {
     logo: srtLogo,
@@ -184,37 +186,6 @@ const experienceData: ExperienceData[] = [
     ]
   },
   {
-    logo: desiLogo,
-    jobName: "Diversified Electric Services	",
-    jobTitle: "Web Developer | Designer",
-    location: "Alexandria, VA",
-    dateStarted: "Dec 2018​ ",
-    dateEnded: "Jan 2019",
-    companyLink: "http://desielectric.com/",
-    skillsUsed: [
-      "Solely designed, developed, and maintained commercial business website for Diversified Electric Services",
-      "Communicated directly with clients to establish project parameters, drafted proposals (mockups and wireframes) for design work, analyzed competitor web sites, determined web site content, produced site maps for client approval, and communicated progress with client throughout length of project.",
-      "Trained end users (client) on performing necessary updates.",
-      "Workflow tools included: SCSS, Javascript, React, Reactstrap, Git"
-    ]
-  },
-  {
-    logo: metiLogo,
-    jobName: "MetiStream",
-    jobTitle: "Graphic Designer",
-    location: "Tyson's Corner, VA",
-    dateStarted: "Nov 2018​ ",
-    dateEnded: "Jan 2019",
-    companyLink: null,
-    skillsUsed: [
-      "Created a customized icon set and stylesheet for high-priority pitch decks, collaborating directly with C-level executive and marketing team to ensure design accuracy and quality across all deliverables",
-      "Developed compelling graphics, slide templates, and presentation materials for critical client meetings and marketing campaigns, utilizing advanced design tools including Adobe Illustrator, Photoshop, XD, and Autodesk Sketchbook Pro",
-      "Researched and presented new ideas for creative marketing campaign.",
-      "Conducted market research and presented innovative concepts for creative marketing strategies, contributing to the company's competitive edge",
-      "Demonstrated versatility by executing skilled layout alterations, color corrections, and design adaptations to meet evolving project requirements and stakeholder feedback, while maintaining brand cohesion"
-    ]
-  },
-  {
     logo: srtLogo,
     jobName: "SRTLabs: Science Robotics and Technology	",
     jobTitle: "Front End Developer",
@@ -233,6 +204,16 @@ const experienceData: ExperienceData[] = [
 ];
 
 const projectData: ProjectData[] = [
+  {
+    projectName: "Library Cataloging System",
+    previewImage: null,
+    deployedApplication: "https://library-cataloging-system-rfht-nrcwqb1of.vercel.app/",
+    githubLink: null,
+    projectSummary:
+      "A comprehensive library cataloging system that stores and organizes books using MARC records. Users can input bibliographic information (title, author, publisher, ISBN) and save it in a structured format. Features include search functionality for retrieving records by various metadata fields, import/export of MARC records, filtering by categories, and an admin interface for managing records.",
+    technologiesUsed:
+      "Node.js, Express.js, MongoDB, React"
+  },
   {
     projectName: "Growthsphere.io",
     previewImage: null,
@@ -294,6 +275,57 @@ const projectData: ProjectData[] = [
   //     "React, SCSS, Bootstrap"
   // }
 ];
+// Small business and contracting support data
+const smallBusinessData: ExperienceData[] = [
+  {
+    logo: desiLogo,
+    jobName: "Diversified Electric Services",
+    jobTitle: "Web Developer | Designer",
+    location: "Alexandria, VA",
+    dateStarted: "Dec 2018​ ",
+    dateEnded: "Jan 2019",
+    companyLink: "http://desielectric.com/",
+    skillsUsed: [
+      "Solely designed, developed, and maintained commercial business website for Diversified Electric Services",
+      "Communicated directly with clients to establish project parameters, drafted proposals (mockups and wireframes) for design work, analyzed competitor web sites, determined web site content, produced site maps for client approval, and communicated progress with client throughout length of project.",
+      "Trained end users (client) on performing necessary updates.",
+      "Workflow tools included: SCSS, Javascript, React, Reactstrap, Git"
+    ]
+  },
+  {
+    logo: metiLogo,
+    jobName: "MetiStream",
+    jobTitle: "Graphic Designer",
+    location: "Tyson's Corner, VA",
+    dateStarted: "Nov 2018​ ",
+    dateEnded: "Jan 2019",
+    companyLink: null,
+    skillsUsed: [
+      "Created a customized icon set and stylesheet for high-priority pitch decks, collaborating directly with C-level executive and marketing team to ensure design accuracy and quality across all deliverables",
+      "Developed compelling graphics, slide templates, and presentation materials for critical client meetings and marketing campaigns, utilizing advanced design tools including Adobe Illustrator, Photoshop, XD, and Autodesk Sketchbook Pro",
+      "Researched and presented new ideas for creative marketing campaign.",
+      "Conducted market research and presented innovative concepts for creative marketing strategies, contributing to the company's competitive edge",
+      "Demonstrated versatility by executing skilled layout alterations, color corrections, and design adaptations to meet evolving project requirements and stakeholder feedback, while maintaining brand cohesion"
+    ]
+  },
+  {
+    logo: sehaLogo,
+    jobName: "Seha Consulting",
+    jobTitle: "Web Developer",
+    location: "Remote",
+    dateStarted: "Feb 2025​ ",
+    dateEnded: "Mar 2025",
+    companyLink: "https://www.sehaconsulting.com/",
+    skillsUsed: [
+      "Created a customized icon set and stylesheet for high-priority pitch decks, collaborating directly with C-level executive and marketing team to ensure design accuracy and quality across all deliverables",
+      "Developed compelling graphics, slide templates, and presentation materials for critical client meetings and marketing campaigns, utilizing advanced design tools including Adobe Illustrator, Photoshop, XD, and Autodesk Sketchbook Pro",
+      "Researched and presented new ideas for creative marketing campaign.",
+      "Conducted market research and presented innovative concepts for creative marketing strategies, contributing to the company's competitive edge",
+      "Demonstrated versatility by executing skilled layout alterations, color corrections, and design adaptations to meet evolving project requirements and stakeholder feedback, while maintaining brand cohesion"
+    ]
+  },
+];
+
 export {
   profileData,
   profilePic,
@@ -306,5 +338,6 @@ export {
   summaryData,
   educationData,
   experienceData,
-  projectData
+  projectData,
+  smallBusinessData
 };
