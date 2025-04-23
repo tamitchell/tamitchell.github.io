@@ -6,7 +6,19 @@ interface Heading {
   id: string;
   depth: number;
   value: string;
+  displayValue: string; // Added displayValue for cleaned heading text
 }
+
+// Function to clean decorative characters from heading text
+const cleanHeadingText = (text: string): string => {
+  // Remove level 2 heading decorations: ･ﾟﾟ･✧･ﾟ･✦ ... ✦･ﾟ･✧･ﾟﾟ･
+  let cleanedText = text.replace(/^･ﾟﾟ･✧･ﾟ･✦\s*/, '').replace(/\s*✦･ﾟ･✧･ﾟﾟ･$/, '');
+  
+  // Remove level 3 heading decorations: ✧･ﾟ: *✧･ﾟ:* ... *:･ﾟ✧*:･ﾟ✧
+  cleanedText = cleanedText.replace(/^✧･ﾟ:\s*\*✧･ﾟ:\*\s*/, '').replace(/\s*\*:･ﾟ✧\*:･ﾟ✧$/, '');
+  
+  return cleanedText.trim();
+};
 
 interface TableOfContentsProps {
   markdown: string;
@@ -28,10 +40,14 @@ const TableOfContents = ({ markdown }: TableOfContentsProps) => {
         const text = match[2].trim();
         const id = text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
         
+        // Clean the heading text for display
+        const displayValue = cleanHeadingText(text);
+        
         return {
           id,
           depth,
-          value: text
+          value: text,
+          displayValue
         };
       });
       
@@ -67,7 +83,7 @@ const TableOfContents = ({ markdown }: TableOfContentsProps) => {
                   activeId === heading.id ? 'text-blue-600 font-medium' : 'text-gray-700'
                 }`}
               >
-                {heading.value}
+                {heading.displayValue}
               </Link>
             </li>
           ))}
