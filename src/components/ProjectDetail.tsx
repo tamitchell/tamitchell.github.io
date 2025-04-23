@@ -6,6 +6,45 @@ import FadeUp from './FadeUp/FadeUp';
 import TableOfContents from './TableOfContents';
 import clsx from 'clsx';
 
+// Helper function to process headings with sparkles
+const processSparkles = (text: string) => {
+  // Pattern for level 2 headings: ･ﾟﾟ･✧･ﾟ･✦ ... ✦･ﾟ･✧･ﾟﾟ･
+  const h2SparklePattern = /^(･ﾟﾟ･✧･ﾟ･✦\s*)(.+?)(\s*✦･ﾟ･✧･ﾟﾟ･)$/;
+  
+  // Pattern for level 3 headings: ✧･ﾟ: *✧･ﾟ:* ... *:･ﾟ✧*:･ﾟ✧
+  const h3SparklePattern = /^(✧･ﾟ:\s*\*✧･ﾟ:\*\s*)(.+?)(\s*\*:･ﾟ✧\*:･ﾟ✧)$/;
+  
+  let match;
+  
+  // Check for level 2 heading pattern
+  if ((match = text.match(h2SparklePattern))) {
+    return {
+      hasSparkles: true,
+      openingSparkle: match[1],
+      content: match[2],
+      closingSparkle: match[3],
+      type: 'h2-sparkle'
+    };
+  }
+  
+  // Check for level 3 heading pattern
+  if ((match = text.match(h3SparklePattern))) {
+    return {
+      hasSparkles: true,
+      openingSparkle: match[1],
+      content: match[2],
+      closingSparkle: match[3],
+      type: 'h3-sparkle'
+    };
+  }
+  
+  // No sparkles found
+  return {
+    hasSparkles: false,
+    content: text
+  };
+};
+
 // Custom components for ReactMarkdown
 const MarkdownComponents = {
   h1: ({ children }: any) => {
@@ -14,10 +53,36 @@ const MarkdownComponents = {
   },
   h2: ({ children }: any) => {
     const id = children.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    const text = children.toString();
+    const processed = processSparkles(text);
+    
+    if (processed.hasSparkles) {
+      return (
+        <h2 id={id}>
+          <span className={`sparkle opening ${processed.type}`}>{processed.openingSparkle}</span>
+          {" "}{processed.content}{" "}
+          <span className={`sparkle closing ${processed.type}`}>{processed.closingSparkle}</span>
+        </h2>
+      );
+    }
+    
     return <h2 id={id}>{children}</h2>;
   },
   h3: ({ children }: any) => {
     const id = children.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    const text = children.toString();
+    const processed = processSparkles(text);
+    
+    if (processed.hasSparkles) {
+      return (
+        <h3 id={id}>
+          <span className={`sparkle opening ${processed.type}`}>{processed.openingSparkle}</span>
+          {" "}{processed.content}{" "}
+          <span className={`sparkle closing ${processed.type}`}>{processed.closingSparkle}</span>
+        </h3>
+      );
+    }
+    
     return <h3 id={id}>{children}</h3>;
   },
   h4: ({ children }: any) => {
@@ -88,7 +153,7 @@ export default function ProjectDetail() {
   }
   
   return (
-    <FadeUp className="project-detail-container max-w-6xl mx-auto px-4 py-8 bg-white">
+    <FadeUp className="project-detail-container max-w-6xl mx-auto px-4 py-2 bg-white">
       <div className="mb-6">
         <Link to="/" className="text-blue-500 hover:text-blue-700 flex items-center">
           ← Back to Projects

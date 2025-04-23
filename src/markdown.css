@@ -8,6 +8,49 @@
 .markdown-content h5,
 .markdown-content h6 {
   scroll-margin-top: 80px; /* Ensures headings are not hidden under fixed headers when scrolled to */
+  text-align: center;
+}
+
+/* Sparkle animations */
+@keyframes twinkle {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+  100% { transform: translateY(0); }
+}
+
+/* Base sparkle styling */
+.markdown-content .sparkle {
+  display: inline-block;
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+/* Stagger the animations */
+.markdown-content .sparkle.opening {
+  animation-delay: 0s;
+}
+
+.markdown-content .sparkle.closing {
+  animation-delay: 1s;
+}
+
+/* Level 2 heading sparkles */
+.markdown-content .sparkle.h2-sparkle {
+  color: rgb(77, 137, 255); /* blue-periwinkle */
+  text-shadow: 0 0 5px rgba(77, 137, 255, 0.5);
+  animation: twinkle 2s infinite ease-in-out, float 3s infinite ease-in-out;
+}
+
+/* Level 3 heading sparkles */
+.markdown-content .sparkle.h3-sparkle {
+  color: #54C5F8; /* blue-sky-light */
+  text-shadow: 0 0 5px rgba(84, 197, 248, 0.5);
+  animation: twinkle 1.5s infinite ease-in-out, float 2.5s infinite ease-in-out;
 }
 
 .markdown-content h1 {
@@ -15,7 +58,7 @@
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  color: #1a202c;
+  color: rgb(77, 137, 255); /* blue-ocean-dark */
 }
 
 .markdown-content h2 {
@@ -23,7 +66,7 @@
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
-  color: #2d3748;
+  color: rgb(77, 137, 255); /* slate-steel */
 }
 
 .markdown-content h3 {
@@ -31,7 +74,7 @@
   font-weight: 600;
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
-  color: #4a5568;
+  color: rgb(77, 137, 255); /* blue-periwinkle */
 }
 
 .markdown-content p {
@@ -58,12 +101,12 @@
 }
 
 .markdown-content a {
-  color: #3182ce;
+  color: rgb(77, 137, 255); /* blue-periwinkle */
   text-decoration: underline;
 }
 
 .markdown-content a:hover {
-  color: #2c5282;
+  color: #3E6680; /* slate-steel */
 }
 
 .markdown-content strong {
@@ -75,28 +118,33 @@
 }
 
 .markdown-content blockquote {
-  border-left: 4px solid #e2e8f0;
+  border-left: 4px solid #3E6680; /* slate-steel */
   padding-left: 1rem;
   margin-left: 0;
   margin-right: 0;
   font-style: italic;
-  color: #4a5568;
+  color: #3E6680; /* slate-steel */
+  background-color: #e7eaf0; /* cloud-light */
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
 }
 
 .markdown-content code {
   font-family: monospace;
-  background-color: #edf2f7;
+  background-color: #e7eaf0; /* cloud-light */
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
   font-size: 0.875rem;
+  color: #2F373F; /* blue-ocean-dark */
 }
 
 .markdown-content pre {
-  background-color: #edf2f7;
+  background-color: #e7eaf0; /* cloud-light */
   padding: 1rem;
   border-radius: 0.25rem;
   overflow-x: auto;
   margin-bottom: 1rem;
+  border: 1px solid rgba(77, 137, 255, 0.2); /* blue-periwinkle with opacity */
 }
 
 .markdown-content pre code {
@@ -106,7 +154,7 @@
 
 .markdown-content hr {
   border: 0;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid #e7eaf0; /* cloud-light */
   margin: 2rem 0;
 }
 
@@ -121,15 +169,26 @@
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
 }
 
 .markdown-content th,
 .markdown-content td {
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e7eaf0; /* cloud-light */
   padding: 0.5rem;
 }
 
 .markdown-content th {
-  background-color: #f7fafc;
+  background-color: #3E6680; /* slate-steel */
+  color: #fff; /* pure-white */
   font-weight: 600;
+}
+
+.markdown-content tr:nth-child(even) {
+  background-color: rgba(231, 234, 240, 0.3); /* cloud-light with opacity */
+}
+
+.markdown-content tr:hover {
+  background-color: rgba(77, 137, 255, 0.1); /* blue-periwinkle with opacity */
 }

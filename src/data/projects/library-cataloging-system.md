@@ -20,7 +20,7 @@ A comprehensive library cataloging system that stores and organizes books using 
 
  It was about finding my way back.
 
- ### ✧･ﾟ: *✧･ﾟ:*  How It Found Me ✧･ﾟ: *✧･ﾟ:* 
+### ✧･ﾟ: *✧･ﾟ:*  How It Found Me ✧･ﾟ: *✧･ﾟ:*
 
  I had been scanning through alternatives—roles that were still technical but didn't reek of silicon sterility or the bureaucratic drone of sprint tickets and standups. I wanted something... *quieter.* More deliberate. (And if you’ve somehow stumbled on this and you work in one of those indisposed places… I apologize. And also, respectfully—*you understand.*)
 
@@ -78,7 +78,7 @@ A comprehensive library cataloging system that stores and organizes books using 
  Now let’s talk about how I actually made the darn thing.
 
  As you’ve probably gathered, it wasn’t built out of professional obligation or classroom necessity.  
- 
+
  It wasn’t part of a capstone or a cohort. It wasn’t meant to prove anything, or at least—not to anyone but me.
 
  It was made not because I had a reason to—but in spite of all the reasons I shouldn’t have.  
@@ -108,42 +108,49 @@ This project served not only as a creative exercise, but also as a technical ref
 ---
 
 ### ✧･ﾟ: *✧･ﾟ:* Bibliographic Entry Management *:･ﾟ✧*:･ﾟ✧
+
 Users can input core metadata—title, author, publisher, ISBN, and additional fields that mirror MARC record standards.  
+
 *Why?* To better understand how cataloging logic is structured, and to simulate the workflows an actual ILS might require.
 
 ---
 
 ### ✧･ﾟ: *✧･ﾟ:* Advanced Search Functionality *:･ﾟ✧*:･ﾟ✧
+
 Records can be searched by title, author, subject, or other metadata fields.  
+
 *Why?* Because metadata is only meaningful if it’s retrievable. I wanted to explore indexing patterns and learn how record depth affects query performance.
 
 ---
 
 ### ✧･ﾟ: *✧･ﾟ:* Import/Export Capabilities *:･ﾟ✧*:･ﾟ✧
+
 Simulated import and export of MARC-like records in JSON format.  
+
 *Why?* As a way to understand the movement of bibliographic data between systems, and to experiment with simple serialization strategies.
 
 ---
 
 ### ✧･ﾟ: *✧･ﾟ:* Category Filtering *:･ﾟ✧*:･ﾟ✧
+
 Users can browse records by genre, language, or other tags.  
+
 *Why?* To simulate public-facing interfaces like OPACs and explore how faceted filtering improves accessibility.
 
 ---
 
-
 ### ✧･ﾟ: *✧･ﾟ:* Technology Stack *:･ﾟ✧*:･ﾟ✧
+
 - **Frontend:** React (with responsive design for mobile support)  
 - **Backend:** Node.js + Express.js  
 - **Database:** MongoDB  
-- **Authentication:** JSON Web Tokens (JWT)  
 - **Version Control:** GitHub
 
 ## ･ﾟﾟ･✧･ﾟ･✦ A Note on AI ✦･ﾟ･✧･ﾟﾟ･
 
-Some aspects of this project were supported by AI—primarily debugging a particularly stubborn type mismatch and scaffolding early function documentation. I used **Cline**, my preferred interface, and—because I like naming things—I called it **Ifirit.**  (Bonus points if you know where this is from!)
+Some aspects of this project were supported by AI—primarily debugging a particularly stubborn type mismatch and scaffolding early function documentation. I used **Cline**, my preferred interface, and—because I like naming things—I called it **Kupo.**  (Bonus points if you know where this is from!)
 
-Ifirit didn’t write the project for me. But it *did* sit beside me while I wrestled through the logic, offering just enough perspective to keep the momentum going.  
+Kupo didn’t write the project for me. But it *did* sit beside me while I wrestled through the logic, offering just enough perspective to keep the momentum going.  
 
 I mention this because I believe in transparency—and because I don’t see AI as a threat to my creativity, but as a companion in it. I still architected the system myself. I still designed the workflows and wrote the logic. But like any good librarian, I consulted the right reference when I needed help.
 
@@ -154,7 +161,3 @@ This project was never meant to be a resume booster. It was a gesture. A little 
 If nothing else, I hope it shows that I care deeply—not just about code, but about structure, clarity, preservation, and access. And maybe… about something a little older, quieter, and more human than the version of tech we so often inherit.
 
 Thank you for reading...
-
-– Tasha
-
-

@@ -141,9 +141,9 @@ Users can browse records by genre, language, or other tags.
 
 ## ･ﾟﾟ･✧･ﾟ･✦ A Note on AI ✦･ﾟ･✧･ﾟﾟ･
 
-Some aspects of this project were supported by AI—primarily debugging a particularly stubborn type mismatch and scaffolding early function documentation. I used **Cline**, my preferred interface, and—because I like naming things—I called it **Ifirit.**  (Bonus points if you know where this is from!)
+Some aspects of this project were supported by AI—primarily debugging a particularly stubborn type mismatch and scaffolding early function documentation. I used **Cline**, my preferred interface, and—because I like naming things—I called it **Kupo.**  (Bonus points if you know where this is from!)
 
-Ifirit didn’t write the project for me. But it *did* sit beside me while I wrestled through the logic, offering just enough perspective to keep the momentum going.  
+Kupo didn’t write the project for me. But it *did* sit beside me while I wrestled through the logic, offering just enough perspective to keep the momentum going.  
 
 I mention this because I believe in transparency—and because I don’t see AI as a threat to my creativity, but as a companion in it. I still architected the system myself. I still designed the workflows and wrote the logic. But like any good librarian, I consulted the right reference when I needed help.
 
